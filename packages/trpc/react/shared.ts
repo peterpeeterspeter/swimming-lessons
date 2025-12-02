@@ -32,6 +32,8 @@ export const ENDPOINTS = [
   "travelSchedules",
   "users",
   "viewer",
+  // Swim feature endpoint
+  "swim",
   "webhook",
   "workflows",
   "googleWorkspace",

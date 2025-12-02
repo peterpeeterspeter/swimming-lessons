@@ -14,6 +14,7 @@ import "../styles/globals.css";
 import { AppRouterI18nProvider } from "./AppRouterI18nProvider";
 import { SpeculationRules } from "./SpeculationRules";
 import { Providers } from "./providers";
+import { TrpcProvider } from "./_trpc/trpc-provider";
 
 const interFont = Inter({ subsets: ["latin"], variable: "--font-inter", preload: true, display: "swap" });
 const calFont = localFont({
@@ -154,11 +155,13 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           ]}
         />
 
-        <Providers isEmbed={isEmbed} nonce={nonce}>
-          <AppRouterI18nProvider translations={translations} locale={locale} ns={ns}>
-            {children}
-          </AppRouterI18nProvider>
-        </Providers>
+        <TrpcProvider>
+          <Providers isEmbed={isEmbed} nonce={nonce}>
+            <AppRouterI18nProvider translations={translations} locale={locale} ns={ns}>
+              {children}
+            </AppRouterI18nProvider>
+          </Providers>
+        </TrpcProvider>
       </body>
     </html>
   );

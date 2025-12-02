@@ -41,6 +41,7 @@ import { viewerTeamsRouter } from "./teams/_router";
 import { travelSchedulesRouter } from "./travelSchedules/_router";
 import { webhookRouter } from "./webhook/_router";
 import { workflowsRouter } from "./workflows/_router";
+import { swimRouter } from "./swim/_router";
 
 export const viewerRouter = router({
   loggedInViewerRouter,
@@ -86,4 +87,5 @@ export const viewerRouter = router({
   travelSchedules: travelSchedulesRouter,
   aiVoiceAgent: aiVoiceAgentRouter,
   phoneNumber: phoneNumberRouter,
+  swim: swimRouter,
 });

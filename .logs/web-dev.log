@@ -1,0 +1,2060 @@
+turbo 2.5.5
+
+• Packages in scope: @calcom/web
+• Running dev in 1 packages
+• Remote caching disabled
+//:env-check:app-store: cache bypass, force executing c871fd1b5cb54dd0
+//:env-check:common: cache bypass, force executing a715c0c66c096476
+//:env-check:app-store: 
+//:env-check:app-store: [ DOTENV-CHECKER ] - Initializing checks for .env files consistency & sync...
+//:env-check:app-store: 
+//:env-check:common: 
+//:env-check:common: [ DOTENV-CHECKER ] - Initializing checks for .env files consistency & sync...
+//:env-check:common: 
+//:env-check:common: 📗 [ INFO ]  ✅ Schema file (.env.example) checked successfully
+//:env-check:app-store: 📗 [ INFO ]  ✅ Schema file (.env.appStore.example) checked successfully
+//:env-check:app-store: 📗 [ INFO ]  ✅ Environment file (.env.appStore) checked successfully
+//:env-check:common: 📗 [ INFO ]  ✅ Environment file (.env) checked successfully
+@calcom/web:dev: cache bypass, force executing 8544bb205f976867
+@calcom/web:dev: turbo 2.5.5
+@calcom/web:dev: 
+@calcom/web:dev: • Packages in scope: @calcom/web
+@calcom/web:dev: • Running copy-app-store-static in 1 packages
+@calcom/web:dev: • Remote caching disabled
+@calcom/web:dev: @calcom/web:copy-app-store-static: cache hit, suppressing logs f66de0480b4c602c
+@calcom/web:dev: 
+@calcom/web:dev:  Tasks:    1 successful, 1 total
+@calcom/web:dev: Cached:    1 cached, 1 total
+@calcom/web:dev:   Time:    2.177s >>> FULL TURBO
+@calcom/web:dev: 
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  other and report_reason_other
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  cal_ai_phone_numbers and phone_numbers
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  add_members_no_ellipsis and add_org_members
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  complete_your_profile and complete_profile
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  location_variable and location
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  additional_notes_variable and additional_notes
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  billing_freeplan_cta and try_now
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  timezone_variable and timezone
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  days and day_timeUnit
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  verify_email and verify_email_button
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  event_start_time_in_attendee_timezone_info and event_start_time_in_attendee_timezone_variable
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  event_end_time_in_attendee_timezone_variable and event_end_time_in_attendee_timezone_info
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  advanced and event_advanced_tab_title
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  pbac_resource_event_type and event_types_page_title
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  pbac_resource_team and teams
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  pbac_resource_organization and organization
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  pbac_resource_booking and bookings
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  pbac_resource_insights and insights
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  pbac_resource_role and roles
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  pbac_resource_workflow and workflows
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  pbac_action_create and create
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  pbac_action_update and edit
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  pbac_action_delete and delete
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  pbac_action_invite and invite
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  pbac_action_remove and remove
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  pbac_action_impersonate and impersonate
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  pbac_resource_attributes and attributes
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  pbac_resource_availability and availability
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  pbac_desc_create_organization and create_org
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  pbac_desc_invite_organization_members and invite_organization_admins
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  enter_license_key_description and enter_your_license_key
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  webhook_title and event_name_info
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  webhook_cancellation_reason and cancellation_reason_host
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  webhook_people and people
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  webhook_teams and teams
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  free and free_to_use_apps
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  created_at_option and routing_form_insights_created_at
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  onboarding_connect_google_workspace and connect_google_workspace
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  onboarding_copy_invite_link and copy_invite_link
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  onboarding_or_divider and or_lowercase
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  onboarding_plan_personal_badge and free_to_use_apps
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  invite_team_members and pbac_desc_invite_team_members
+@calcom/web:dev: [Phase: phase-development-server] Skipping rewrite config for organizations because ORGANIZATIONS_ENABLED is not set
+@calcom/web:dev:  ⚠ Port 3000 is in use by process 83177, using available port 3001 instead.
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  other and report_reason_other
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  cal_ai_phone_numbers and phone_numbers
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  add_members_no_ellipsis and add_org_members
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  complete_your_profile and complete_profile
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  location_variable and location
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  additional_notes_variable and additional_notes
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  billing_freeplan_cta and try_now
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  timezone_variable and timezone
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  days and day_timeUnit
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  verify_email and verify_email_button
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  event_start_time_in_attendee_timezone_info and event_start_time_in_attendee_timezone_variable
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  event_end_time_in_attendee_timezone_variable and event_end_time_in_attendee_timezone_info
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  advanced and event_advanced_tab_title
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  pbac_resource_event_type and event_types_page_title
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  pbac_resource_team and teams
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  pbac_resource_organization and organization
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  pbac_resource_booking and bookings
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  pbac_resource_insights and insights
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  pbac_resource_role and roles
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  pbac_resource_workflow and workflows
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  pbac_action_create and create
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  pbac_action_update and edit
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  pbac_action_delete and delete
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  pbac_action_invite and invite
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  pbac_action_remove and remove
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  pbac_action_impersonate and impersonate
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  pbac_resource_attributes and attributes
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  pbac_resource_availability and availability
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  pbac_desc_create_organization and create_org
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  pbac_desc_invite_organization_members and invite_organization_admins
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  enter_license_key_description and enter_your_license_key
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  webhook_title and event_name_info
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  webhook_cancellation_reason and cancellation_reason_host
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  webhook_people and people
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  webhook_teams and teams
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  free and free_to_use_apps
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  created_at_option and routing_form_insights_created_at
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  onboarding_connect_google_workspace and connect_google_workspace
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  onboarding_copy_invite_link and copy_invite_link
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  onboarding_or_divider and or_lowercase
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  onboarding_plan_personal_badge and free_to_use_apps
+@calcom/web:dev: [33mDuplicate value found in common.json keys: [0m  invite_team_members and pbac_desc_invite_team_members
+@calcom/web:dev: [Phase: phase-development-server] Skipping rewrite config for organizations because ORGANIZATIONS_ENABLED is not set
+@calcom/web:dev:    ▲ Next.js 15.5.4 (Turbopack)
+@calcom/web:dev:    - Local:        http://localhost:3001
+@calcom/web:dev:    - Network:      http://192.168.0.197:3001
+@calcom/web:dev:    - Experiments (use with caution):
+@calcom/web:dev:      ✓ webpackBuildWorker
+@calcom/web:dev:      · optimizePackageImports
+@calcom/web:dev:      ✓ webpackMemoryOptimizations
+@calcom/web:dev: 
+@calcom/web:dev:  ✓ Starting...
+@calcom/web:dev:  ✓ Compiled instrumentation Node.js in 28ms
+@calcom/web:dev:  ✓ Compiled instrumentation Edge in 23ms
+@calcom/web:dev:  ✓ Compiled middleware in 304ms
+@calcom/web:dev:  ✓ Ready in 2.7s
+@calcom/web:dev: [Phase: phase-development-server] Skipping rewrite config for organizations because ORGANIZATIONS_ENABLED is not set
+@calcom/web:dev:  ⚠ Webpack is configured while Turbopack is not, which may cause problems.
+@calcom/web:dev:  ⚠ See instructions if you need to configure Turbopack:
+@calcom/web:dev:   https://nextjs.org/docs/app/api-reference/next-config-js/turbopack
+@calcom/web:dev: 
+@calcom/web:dev:  ✓ Compiled instrumentation Node.js in 13ms
+@calcom/web:dev:  ✓ Compiled instrumentation Edge in 13ms
+@calcom/web:dev:  ✓ Compiled middleware in 9ms
+@calcom/web:dev:  ✓ Compiled instrumentation Node.js in 2ms
+@calcom/web:dev:  ✓ Compiled instrumentation Edge in 7ms
+@calcom/web:dev:  ✓ Compiled middleware in 3ms
+@calcom/web:dev:  ✓ Compiled instrumentation Node.js in 5ms
+@calcom/web:dev:  ✓ Compiled instrumentation Edge in 3ms
+@calcom/web:dev:  ✓ Compiled middleware in 64ms
+@calcom/web:dev:  ✓ Compiled instrumentation Node.js in 32ms
+@calcom/web:dev:  ✓ Compiled instrumentation Edge in 100ms
+@calcom/web:dev:  ✓ Compiled middleware in 3ms
+@calcom/web:dev:  ✓ Compiled instrumentation Node.js in 8ms
+@calcom/web:dev:  ✓ Compiled instrumentation Edge in 1ms
+@calcom/web:dev:  ✓ Compiled middleware in 8ms
+@calcom/web:dev: [?25h
+
+ Tasks:    3 successful, 3 total
+Cached:    0 cached, 3 total
+  Time:    210h3m21.989s 
+
+                     @calcom/web:dev:  ○ Compiling /instructor ...
+@calcom/web:dev:  ✓ Compiled /instructor in 2.9s
+@calcom/web:dev:  GET /instructor 200 in 6909ms
+@calcom/web:dev:  GET /instructor 200 in 267ms
+@calcom/web:dev:  GET /instructor 200 in 352ms
+@calcom/web:dev:  GET /api/auth/session 200 in 321ms
+@calcom/web:dev:  ○ Compiling /favicon.ico ...
+@calcom/web:dev:  ✓ Compiled /favicon.ico in 1284ms
+@calcom/web:dev:  GET /favicon.ico?favicon.86159f0d.ico 200 in 1642ms
+@calcom/web:dev:  GET /favicon.ico 200 in 334ms
+@calcom/web:dev:  ○ Compiling /api/logo ...
+@calcom/web:dev:  ✓ Compiled /api/logo in 2.3s
+@calcom/web:dev: 23[0m[0m:46[0m[0m:41[0m[0m:422[0m[0m [WARN[0m[0m] orgDomains.ts Org support not enabled for hostname without "." {
+@calcom/web:dev:   hostname: [32m'localhost:3000'[39m
+@calcom/web:dev: }
+@calcom/web:dev:  GET /api/logo?type=android-chrome-192 200 in 2642ms
+@calcom/web:dev:  ○ Compiling /[user]/[type] ...
+@calcom/web:dev:  ✓ Compiled /[user]/[type] in 6.3s
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev: 23[0m[0m:46[0m[0m:57[0m[0m:574[0m[0m [WARN[0m[0m] orgDomains.ts Org support not enabled for hostname without "." {
+@calcom/web:dev:   hostname: [32m'localhost:3000'[39m
+@calcom/web:dev: }
+@calcom/web:dev: 23[0m[0m:46[0m[0m:57[0m[0m:579[0m[0m [WARN[0m[0m] orgDomains.ts Org support not enabled for hostname without "." {
+@calcom/web:dev:   hostname: [32m'localhost:3000'[39m
+@calcom/web:dev: }
+@calcom/web:dev:  GET /instructor/booking 404 in 10048ms
+@calcom/web:dev:  GET /favicon.ico?favicon.86159f0d.ico 200 in 311ms
+@calcom/web:dev:  ○ Compiling /api/trpc/features/[trpc] ...
+@calcom/web:dev:  GET /api/auth/session 304 in 683ms
+@calcom/web:dev: 23[0m[0m:47[0m[0m:01[0m[0m:974[0m[0m [WARN[0m[0m] orgDomains.ts Org support not enabled for hostname without "." {
+@calcom/web:dev:   hostname: [32m'localhost:3000'[39m
+@calcom/web:dev: }
+@calcom/web:dev:  ✓ Compiled /api/trpc/features/[trpc] in 2.4s
+@calcom/web:dev:  GET /api/logo?type=android-chrome-192 200 in 3395ms
+@calcom/web:dev:  GET /api/auth/session 304 in 832ms
+@calcom/web:dev:  GET /api/trpc/features/map?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1525ms
+@calcom/web:dev:  ○ Compiling /instructor/booking/[id] ...
+@calcom/web:dev:  ✓ Compiled /instructor/booking/[id] in 1129ms
+@calcom/web:dev: Error: Route "/instructor/booking/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+@calcom/web:dev:     at BookingAttendancePage (app/instructor/booking/[id]/page.tsx:18:35)
+@calcom/web:dev:   16 |
+@calcom/web:dev:   17 | export default function BookingAttendancePage({ params }: { params: { id: string } }) {
+@calcom/web:dev: > 18 |   const bookingId = Number(params.id);
+@calcom/web:dev:      |                                   ^
+@calcom/web:dev:   19 |   const router = useRouter();
+@calcom/web:dev:   20 |
+@calcom/web:dev:   21 |   const roster = trpc.viewer.swim.instructor.getRoster.useQuery({ bookingId });
+@calcom/web:dev:  GET /instructor/booking/31 200 in 1966ms
+@calcom/web:dev: Error: Route "/instructor/booking/[id]" used `params.id`. `params` should be awaited before using its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+@calcom/web:dev:     at BookingAttendancePage (app/instructor/booking/[id]/page.tsx:18:35)
+@calcom/web:dev:   16 |
+@calcom/web:dev:   17 | export default function BookingAttendancePage({ params }: { params: { id: string } }) {
+@calcom/web:dev: > 18 |   const bookingId = Number(params.id);
+@calcom/web:dev:      |                                   ^
+@calcom/web:dev:   19 |   const router = useRouter();
+@calcom/web:dev:   20 |
+@calcom/web:dev:   21 |   const roster = trpc.viewer.swim.instructor.getRoster.useQuery({ bookingId });
+@calcom/web:dev:  GET /instructor/booking/31 200 in 327ms
+@calcom/web:dev:  GET /favicon.ico?favicon.86159f0d.ico 200 in 891ms
+@calcom/web:dev:  GET /api/auth/session 304 in 1229ms
+@calcom/web:dev:  GET /api/auth/session 304 in 179ms
+@calcom/web:dev: 23[0m[0m:54[0m[0m:20[0m[0m:744[0m[0m [WARN[0m[0m] orgDomains.ts Org support not enabled for hostname without "." {
+@calcom/web:dev:   hostname: [32m'localhost:3000'[39m
+@calcom/web:dev: }
+@calcom/web:dev:  GET /api/logo?type=android-chrome-192 200 in 1427ms
+@calcom/web:dev:  ✓ Compiled in 1224ms
+@calcom/web:dev:  GET /instructor/booking/31 200 in 1361ms
+@calcom/web:dev:  GET /instructor/booking/31 200 in 506ms
+@calcom/web:dev:  GET /api/auth/session 304 in 181ms
+@calcom/web:dev:  GET /favicon.ico?favicon.86159f0d.ico 200 in 1393ms
+@calcom/web:dev:  GET /api/auth/session 304 in 271ms
+@calcom/web:dev:  GET /api/auth/session 304 in 258ms
+@calcom/web:dev: 00[0m[0m:01[0m[0m:23[0m[0m:111[0m[0m [WARN[0m[0m] orgDomains.ts Org support not enabled for hostname without "." {
+@calcom/web:dev:   hostname: [32m'localhost:3000'[39m
+@calcom/web:dev: }
+@calcom/web:dev:  GET /api/logo?type=android-chrome-192 200 in 945ms
+@calcom/web:dev:  ✓ Compiled in 603ms
+@calcom/web:dev:  GET /instructor/booking/31 200 in 1225ms
+@calcom/web:dev:  GET /api/auth/session 304 in 64ms
+@calcom/web:dev:  GET /api/auth/session 304 in 64ms
+@calcom/web:dev:  GET /favicon.ico?favicon.86159f0d.ico 200 in 845ms
+@calcom/web:dev:  GET /api/auth/session 304 in 822ms
+@calcom/web:dev:  GET /api/auth/session 304 in 135ms
+@calcom/web:dev: 00[0m[0m:03[0m[0m:36[0m[0m:069[0m[0m [WARN[0m[0m] orgDomains.ts Org support not enabled for hostname without "." {
+@calcom/web:dev:   hostname: [32m'localhost:3000'[39m
+@calcom/web:dev: }
+@calcom/web:dev:  GET /api/logo?type=android-chrome-192 200 in 1470ms
+@calcom/web:dev:  GET /instructor/booking/31 200 in 351ms
+@calcom/web:dev:  GET /api/auth/session 304 in 64ms
+@calcom/web:dev:  GET /api/auth/session 304 in 67ms
+@calcom/web:dev:  GET /favicon.ico?favicon.86159f0d.ico 200 in 539ms
+@calcom/web:dev:  GET /api/auth/session 304 in 51ms
+@calcom/web:dev:  GET /api/auth/session 304 in 104ms
+@calcom/web:dev:  GET /favicon.ico 200 in 375ms
+@calcom/web:dev: 00[0m[0m:03[0m[0m:40[0m[0m:073[0m[0m [WARN[0m[0m] orgDomains.ts Org support not enabled for hostname without "." {
+@calcom/web:dev:   hostname: [32m'localhost:3000'[39m
+@calcom/web:dev: }
+@calcom/web:dev:  GET /api/logo?type=android-chrome-192 200 in 374ms
+@calcom/web:dev:  GET /instructor/booking/31 200 in 331ms
+@calcom/web:dev:  GET /api/auth/session 200 in 125ms
+@calcom/web:dev:  GET /favicon.ico?favicon.86159f0d.ico 200 in 360ms
+@calcom/web:dev:  GET /api/auth/session 304 in 862ms
+@calcom/web:dev:  GET /api/auth/session 304 in 299ms
+@calcom/web:dev:  GET /api/logo?type=android-chrome-192 200 in 1207ms
+@calcom/web:dev:  GET /favicon.ico 200 in 1293ms
+@calcom/web:dev: 00[0m[0m:03[0m[0m:54[0m[0m:545[0m[0m [WARN[0m[0m] orgDomains.ts Org support not enabled for hostname without "." {
+@calcom/web:dev:   hostname: [32m'localhost:3000'[39m
+@calcom/web:dev: }
+@calcom/web:dev:  GET /api/auth/session 304 in 171ms
+@calcom/web:dev:  GET /api/trpc/features/map?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 154ms
+@calcom/web:dev:  ✓ Compiled /auth/login in 240ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 30ms
+@calcom/web:dev: react-i18next:: You will need to pass in an i18next instance by using initReactI18next
+@calcom/web:dev:  GET /auth/login 200 in 2005ms
+@calcom/web:dev: 00[0m[0m:11[0m[0m:04[0m[0m:102[0m[0m [WARN[0m[0m] orgDomains.ts Org support not enabled for hostname without "." {
+@calcom/web:dev:   hostname: [32m'localhost:3000'[39m
+@calcom/web:dev: }
+@calcom/web:dev:  GET /favicon.ico?favicon.86159f0d.ico 200 in 306ms
+@calcom/web:dev:  GET /api/logo 200 in 536ms
+@calcom/web:dev:  ○ Compiling /api/trpc/public/[trpc] ...
+@calcom/web:dev:  GET /api/auth/session 304 in 1009ms
+@calcom/web:dev:  GET /api/trpc/features/map?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 894ms
+@calcom/web:dev: 00[0m[0m:11[0m[0m:07[0m[0m:062[0m[0m [WARN[0m[0m] orgDomains.ts Org support not enabled for hostname without "." {
+@calcom/web:dev:   hostname: [32m'localhost:3000'[39m
+@calcom/web:dev: }
+@calcom/web:dev:  GET /api/logo?type=android-chrome-192 200 in 2404ms
+@calcom/web:dev:  ✓ Compiled /api/trpc/public/[trpc] in 3.6s
+@calcom/web:dev:  GET /api/trpc/public/ssoConnections?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 76ms
+@calcom/web:dev:  GET /instructor 200 in 342ms
+@calcom/web:dev:  GET /api/auth/session 304 in 71ms
+@calcom/web:dev:  GET /favicon.ico?favicon.86159f0d.ico 200 in 792ms
+@calcom/web:dev: 00[0m[0m:11[0m[0m:34[0m[0m:582[0m[0m [WARN[0m[0m] orgDomains.ts Org support not enabled for hostname without "." {
+@calcom/web:dev:   hostname: [32m'localhost:3000'[39m
+@calcom/web:dev: }
+@calcom/web:dev:  GET /api/logo?type=android-chrome-192 200 in 310ms
+@calcom/web:dev:  ✓ Compiled in 981ms
+@calcom/web:dev:  ✓ Compiled in 539ms
+@calcom/web:dev:  ✓ Compiled instrumentation Node.js in 4ms
+@calcom/web:dev:  ✓ Compiled instrumentation Edge in 141ms
+@calcom/web:dev:  ✓ Compiled middleware in 1ms
+@calcom/web:dev:  ✓ Compiled instrumentation Node.js in 1ms
+@calcom/web:dev:  ✓ Compiled instrumentation Edge in 1ms
+@calcom/web:dev:  ✓ Compiled middleware in 2ms
+@calcom/web:dev:  ✓ Compiled instrumentation Node.js in 134ms
+@calcom/web:dev:  ✓ Compiled instrumentation Edge in 2ms
+@calcom/web:dev:  ✓ Compiled middleware in 1ms
+@calcom/web:dev:  ✓ Compiled instrumentation Node.js in 4ms
+@calcom/web:dev:  ✓ Compiled instrumentation Edge in 3ms
+@calcom/web:dev:  ✓ Compiled middleware in 1ms
+@calcom/web:dev:  ✓ Compiled in 203ms
+@calcom/web:dev:  ✓ Compiled in 237ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 681ms
+@calcom/web:dev: 09[0m[0m:05[0m[0m:42[0m[0m:127[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 545ms
+@calcom/web:dev:  ○ Compiling /settings/my-account/profile ...
+@calcom/web:dev:  ✓ Compiled /settings/my-account/profile in 12.6s
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev: 09[0m[0m:05[0m[0m:58[0m[0m:787[0m[0m [ERROR[0m[0m] getDeploymentKey Signature token not found in database or set in environment variable
+@calcom/web:dev: 09[0m[0m:05[0m[0m:58[0m[0m:792[0m[0m [ERROR[0m[0m] getDeploymentKey Signature token not found in database or set in environment variable
+@calcom/web:dev: react-i18next:: You will need to pass in an i18next instance by using initReactI18next
+@calcom/web:dev: VariableNode should implement "importJSON" method to ensure JSON and default HTML serialization works as expected
+@calcom/web:dev:  ○ Compiling /api/trpc/me/[trpc] ...
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev: 09[0m[0m:06[0m[0m:03[0m[0m:538[0m[0m [ERROR[0m[0m] getDeploymentKey Signature token not found in database or set in environment variable
+@calcom/web:dev:  GET /api/trpc/features/map?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 750ms
+@calcom/web:dev:  GET /api/auth/session 200 in 958ms
+@calcom/web:dev:  GET /api/trpc/me/get?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 401 in 1071ms
+@calcom/web:dev: [97;46m << query [1;97;46m #1 viewer.me.get [0m {
+@calcom/web:dev:   input: undefined,
+@calcom/web:dev:   result: [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:     meta: {
+@calcom/web:dev:       response: Response {
+@calcom/web:dev:         status: 401,
+@calcom/web:dev:         statusText: 'Unauthorized',
+@calcom/web:dev:         headers: Headers {
+@calcom/web:dev:           'x-content-type-options': 'nosniff',
+@calcom/web:dev:           'referrer-policy': 'strict-origin-when-cross-origin',
+@calcom/web:dev:           'content-type': 'application/json',
+@calcom/web:dev:           vary: 'Accept-Encoding',
+@calcom/web:dev:           'content-encoding': 'gzip',
+@calcom/web:dev:           date: 'Thu, 06 Nov 2025 09:06:07 GMT',
+@calcom/web:dev:           connection: 'keep-alive',
+@calcom/web:dev:           'keep-alive': 'timeout=5',
+@calcom/web:dev:           'transfer-encoding': 'chunked'
+@calcom/web:dev:         },
+@calcom/web:dev:         body: ReadableStream { locked: true, state: 'closed', supportsBYOB: true },
+@calcom/web:dev:         bodyUsed: true,
+@calcom/web:dev:         ok: false,
+@calcom/web:dev:         redirected: false,
+@calcom/web:dev:         type: 'basic',
+@calcom/web:dev:         url: 'http://localhost:3000/api/trpc/me/get?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D'
+@calcom/web:dev:       },
+@calcom/web:dev:       responseJSON: [Array]
+@calcom/web:dev:     },
+@calcom/web:dev:     shape: { message: 'UNAUTHORIZED', code: -32001, data: [Object] },
+@calcom/web:dev:     data: {
+@calcom/web:dev:       code: 'UNAUTHORIZED',
+@calcom/web:dev:       httpStatus: 401,
+@calcom/web:dev:       stack: 'TRPCError: UNAUTHORIZED\n' +
+@calcom/web:dev:         '    at /Users/Peter/Developer/swimming-lessons/apps/web/.next/server/chunks/[root-of-the-server]__2fc4cd5e._.js:8882:15\n' +
+@calcom/web:dev:         '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+@calcom/web:dev:         '    at async callRecursive (file:///Users/Peter/Developer/swimming-lessons/node_modules/@trpc/server/dist/unstable-core-do-not-import/procedureBuilder.mjs:125:32)\n' +
+@calcom/web:dev:         '    at async /Users/Peter/Developer/swimming-lessons/apps/web/.next/server/chunks/[root-of-the-server]__fc1ca620._.js:3843:20\n' +
+@calcom/web:dev:         '    at async callRecursive (file:///Users/Peter/Developer/swimming-lessons/node_modules/@trpc/server/dist/unstable-core-do-not-import/procedureBuilder.mjs:125:32)\n' +
+@calcom/web:dev:         '    at async procedure (file:///Users/Peter/Developer/swimming-lessons/node_modules/@trpc/server/dist/unstable-core-do-not-import/procedureBuilder.mjs:155:24)\n' +
+@calcom/web:dev:         '    at async inputToProcedureCall (file:///Users/Peter/Developer/swimming-lessons/node_modules/@trpc/server/dist/unstable-core-do-not-import/http/resolveHTTPResponse.mjs:47:22)\n' +
+@calcom/web:dev:         '    at async Promise.all (index 0)\n' +
+@calcom/web:dev:         '    at async resolveHTTPResponse (file:///Users/Peter/Developer/swimming-lessons/node_modules/@trpc/server/dist/unstable-core-do-not-import/http/resolveHTTPResponse.mjs:184:37)\n' +
+@calcom/web:dev:         '    at async file:///Users/Peter/Developer/swimming-lessons/node_modules/@trpc/server/dist/adapters/node-http/nodeHTTPRequestHandler.mjs:82:9\n' +
+@calcom/web:dev:         '    at async file:///Users/Peter/Developer/swimming-lessons/node_modules/@trpc/server/dist/adapters/next.mjs:47:9\n' +
+@calcom/web:dev:         '    at async apiResolver (/Users/Peter/Developer/swimming-lessons/node_modules/next/dist/compiled/next-server/pages-api-turbo.runtime.dev.js:2:4425)\n' +
+@calcom/web:dev:         '    at async PagesAPIRouteModule.render (/Users/Peter/Developer/swimming-lessons/node_modules/next/dist/compiled/next-server/pages-api-turbo.runtime.dev.js:2:5955)\n' +
+@calcom/web:dev:         '    at async Module.handler (/Users/Peter/Developer/swimming-lessons/apps/web/.next/server/chunks/node_modules_4c8804a0._.js:5625:13)\n' +
+@calcom/web:dev:         '    at async DevServer.runApi (/Users/Peter/Developer/swimming-lessons/node_modules/next/dist/server/next-server.js:766:9)\n' +
+@calcom/web:dev:         '    at async NextNodeServer.handleCatchallRenderRequest (/Users/Peter/Developer/swimming-lessons/node_modules/next/dist/server/next-server.js:390:37)\n' +
+@calcom/web:dev:         '    at async DevServer.handleRequestImpl (/Users/Peter/Developer/swimming-lessons/node_modules/next/dist/server/base-server.js:916:17)\n' +
+@calcom/web:dev:         '    at async /Users/Peter/Developer/swimming-lessons/node_modules/next/dist/server/dev/next-dev-server.js:399:20\n' +
+@calcom/web:dev:         '    at async Span.traceAsyncFn (/Users/Peter/Developer/swimming-lessons/node_modules/next/dist/trace/trace.js:157:20)\n' +
+@calcom/web:dev:         '    at async DevServer.handleRequest (/Users/Peter/Developer/swimming-lessons/node_modules/next/dist/server/dev/next-dev-server.js:395:24)\n' +
+@calcom/web:dev:         '    at async invokeRender (/Users/Peter/Developer/swimming-lessons/node_modules/next/dist/server/lib/router-server.js:240:21)\n' +
+@calcom/web:dev:         '    at async handleRequest (/Users/Peter/Developer/swimming-lessons/node_modules/next/dist/server/lib/router-server.js:437:24)\n' +
+@calcom/web:dev:         '    at async requestHandlerImpl (/Users/Peter/Developer/swimming-lessons/node_modules/next/dist/server/lib/router-server.js:485:13)\n' +
+@calcom/web:dev:         '    at async Server.requestListener (/Users/Peter/Developer/swimming-lessons/node_modules/next/dist/server/lib/start-server.js:226:13)',
+@calcom/web:dev:       path: 'get'
+@calcom/web:dev:     }
+@calcom/web:dev:   },
+@calcom/web:dev:   elapsedMs: 6874
+@calcom/web:dev: }
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '4033824979'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 25904ms
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 3115ms
+@calcom/web:dev: 09[0m[0m:06[0m[0m:12[0m[0m:183[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev: [PERF]: getEventTypesFromGroup(4) took 1711.4480840042233ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 200 in 7409ms
+@calcom/web:dev:  GET /favicon.ico 200 in 6656ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 425ms
+@calcom/web:dev:  GET /api/trpc/attributes/getByUserId?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22userId%22%3A4%7D%7D%7D 401 in 446ms
+@calcom/web:dev:  ✓ Compiled /api/trpc/me/[trpc] in 17.7s
+@calcom/web:dev:  GET /swim 200 in 6850ms
+@calcom/web:dev:  GET /api/auth/session 200 in 1617ms
+@calcom/web:dev:  GET /api/trpc/me/get?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1868ms
+@calcom/web:dev:  GET /favicon.ico 200 in 2435ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includeOrgs%22%3Afalse%7D%7D%7D 200 in 1847ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 153ms
+@calcom/web:dev: 09[0m[0m:10[0m[0m:23[0m[0m:952[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 415ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '4033824979'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 936ms
+@calcom/web:dev:  GET /api/auth/session 200 in 698ms
+@calcom/web:dev:  GET /favicon.ico 200 in 979ms
+@calcom/web:dev: 09[0m[0m:10[0m[0m:26[0m[0m:822[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  GET /api/trpc/features/map?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1111ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1195ms
+@calcom/web:dev: [PERF]: getEventTypesFromGroup(4) took 518.3157499954104ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 200 in 1354ms
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1355ms
+@calcom/web:dev:  GET /swim 200 in 2404ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includeOrgs%22%3Afalse%7D%7D%7D 200 in 810ms
+@calcom/web:dev:  GET /api/auth/session 200 in 493ms
+@calcom/web:dev:  GET /api/trpc/me/get?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 815ms
+@calcom/web:dev:  GET /favicon.ico 200 in 2181ms
+@calcom/web:dev:  ✓ Compiled /instructor in 398ms
+@calcom/web:dev:  GET /instructor 200 in 709ms
+@calcom/web:dev:  GET /favicon.ico 200 in 351ms
+@calcom/web:dev:  GET /swim 200 in 287ms
+@calcom/web:dev:  GET /api/auth/session 200 in 984ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includeOrgs%22%3Afalse%7D%7D%7D 200 in 1276ms
+@calcom/web:dev:  GET /api/trpc/me/get?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1290ms
+@calcom/web:dev:  GET /favicon.ico 200 in 1755ms
+@calcom/web:dev:  ○ Compiling /manager ...
+@calcom/web:dev:  ✓ Compiled /manager in 3.8s
+@calcom/web:dev:  GET /manager 200 in 4350ms
+@calcom/web:dev:  GET /favicon.ico 200 in 444ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 111ms
+@calcom/web:dev: 09[0m[0m:10[0m[0m:40[0m[0m:940[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 359ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '4033824979'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 568ms
+@calcom/web:dev:  GET /api/auth/session 200 in 920ms
+@calcom/web:dev:  GET /favicon.ico 200 in 1444ms
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1720ms
+@calcom/web:dev: 09[0m[0m:10[0m[0m:44[0m[0m:866[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1917ms
+@calcom/web:dev:  GET /api/trpc/features/map?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1247ms
+@calcom/web:dev: [PERF]: getEventTypesFromGroup(6) took 326.59308299422264ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 200 in 1848ms
+@calcom/web:dev:  GET /swim 200 in 2397ms
+@calcom/web:dev:  GET /api/auth/session 200 in 227ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includeOrgs%22%3Afalse%7D%7D%7D 200 in 227ms
+@calcom/web:dev:  GET /api/trpc/me/get?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 256ms
+@calcom/web:dev:  GET /favicon.ico 200 in 769ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 185ms
+@calcom/web:dev: 09[0m[0m:16[0m[0m:32[0m[0m:566[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 408ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '4033824979'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 731ms
+@calcom/web:dev:  GET /favicon.ico 200 in 344ms
+@calcom/web:dev:  GET /api/auth/session 200 in 236ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1081ms
+@calcom/web:dev: 09[0m[0m:16[0m[0m:35[0m[0m:696[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  GET /api/trpc/features/map?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1181ms
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1403ms
+@calcom/web:dev: [PERF]: getEventTypesFromGroup(4) took 255.79374999552965ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 200 in 1368ms
+@calcom/web:dev: react-i18next:: You will need to pass in an i18next instance by using initReactI18next
+@calcom/web:dev:  GET /instructor 200 in 4184ms
+@calcom/web:dev:  GET /api/auth/session 200 in 192ms
+@calcom/web:dev:  GET /favicon.ico 200 in 461ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 335ms
+@calcom/web:dev: 09[0m[0m:21[0m[0m:31[0m[0m:403[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 720ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '4033824979'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 1561ms
+@calcom/web:dev:  GET /api/auth/session 200 in 1056ms
+@calcom/web:dev:  GET /favicon.ico 200 in 3557ms
+@calcom/web:dev:  GET /api/trpc/features/map?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 885ms
+@calcom/web:dev: 09[0m[0m:21[0m[0m:37[0m[0m:480[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1277ms
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1616ms
+@calcom/web:dev: [PERF]: getEventTypesFromGroup(4) took 587.437125004828ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 200 in 1660ms
+@calcom/web:dev: react-i18next:: You will need to pass in an i18next instance by using initReactI18next
+@calcom/web:dev:  GET /swim 200 in 2972ms
+@calcom/web:dev:  GET /api/auth/session 200 in 605ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includeOrgs%22%3Afalse%7D%7D%7D 200 in 821ms
+@calcom/web:dev:  GET /api/trpc/me/get?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 827ms
+@calcom/web:dev:  GET /favicon.ico 200 in 1361ms
+@calcom/web:dev:  GET /instructor 200 in 429ms
+@calcom/web:dev:  GET /favicon.ico 200 in 629ms
+@calcom/web:dev:  GET /swim 200 in 969ms
+@calcom/web:dev: 09[0m[0m:21[0m[0m:46[0m[0m:630[0m[0m [WARN[0m[0m] orgDomains.ts Org support not enabled for hostname without "." {
+@calcom/web:dev:   hostname: [32m'localhost:3000'[39m
+@calcom/web:dev: }
+@calcom/web:dev:  GET /api/logo?type=favicon-32 200 in 2272ms
+@calcom/web:dev:  GET /api/auth/session 200 in 532ms
+@calcom/web:dev:  GET /api/trpc/me/get?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 646ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includeOrgs%22%3Afalse%7D%7D%7D 200 in 596ms
+@calcom/web:dev:  GET /favicon.ico 200 in 1028ms
+@calcom/web:dev:  GET /manager 200 in 209ms
+@calcom/web:dev:  GET /favicon.ico 200 in 457ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 44ms
+@calcom/web:dev: 09[0m[0m:21[0m[0m:48[0m[0m:470[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 393ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '4033824979'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 698ms
+@calcom/web:dev:  GET /favicon.ico 200 in 502ms
+@calcom/web:dev:  GET /api/auth/session 200 in 1006ms
+@calcom/web:dev:  GET /api/trpc/features/map?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 562ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 655ms
+@calcom/web:dev: 09[0m[0m:21[0m[0m:51[0m[0m:441[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 897ms
+@calcom/web:dev: [PERF]: getEventTypesFromGroup(6) took 308.6171249970794ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 200 in 976ms
+@calcom/web:dev:  GET /swim 200 in 2134ms
+@calcom/web:dev:  ○ Compiling /parent ...
+@calcom/web:dev:  GET /api/auth/session 200 in 1877ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includeOrgs%22%3Afalse%7D%7D%7D 200 in 2131ms
+@calcom/web:dev:  GET /api/trpc/me/get?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 2225ms
+@calcom/web:dev:  GET /favicon.ico 200 in 3056ms
+@calcom/web:dev:  ✓ Compiled /parent in 4.8s
+@calcom/web:dev:  GET /parent 200 in 5684ms
+@calcom/web:dev:  GET /favicon.ico 200 in 952ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 257ms
+@calcom/web:dev: 09[0m[0m:22[0m[0m:20[0m[0m:580[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 367ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '4033824979'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 666ms
+@calcom/web:dev:  GET /favicon.ico 200 in 2759ms
+@calcom/web:dev:  GET /api/auth/session 200 in 1107ms
+@calcom/web:dev: 09[0m[0m:22[0m[0m:25[0m[0m:258[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  GET /api/trpc/features/map?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1129ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1292ms
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1451ms
+@calcom/web:dev: [PERF]: getEventTypesFromGroup(4) took 185.8525000065565ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 200 in 1569ms
+@calcom/web:dev:  GET /api/trpc/attributes/getByUserId?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22userId%22%3A4%7D%7D%7D 401 in 648ms
+@calcom/web:dev:  GET /instructor 200 in 2316ms
+@calcom/web:dev:  GET /api/auth/session 200 in 118ms
+@calcom/web:dev:  GET /favicon.ico 200 in 586ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 134ms
+@calcom/web:dev: 09[0m[0m:27[0m[0m:43[0m[0m:027[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 1345ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '4033824979'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 2126ms
+@calcom/web:dev:  GET /favicon.ico 200 in 499ms
+@calcom/web:dev:  GET /api/auth/session 200 in 1372ms
+@calcom/web:dev: 09[0m[0m:27[0m[0m:49[0m[0m:680[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  GET /api/trpc/features/map?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 951ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1179ms
+@calcom/web:dev: [PERF]: getEventTypesFromGroup(4) took 284.71012499928474ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 200 in 1384ms
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1271ms
+@calcom/web:dev: react-i18next:: You will need to pass in an i18next instance by using initReactI18next
+@calcom/web:dev:  GET /instructor 200 in 3846ms
+@calcom/web:dev:  GET /api/auth/session 200 in 455ms
+@calcom/web:dev:  GET /favicon.ico 200 in 1013ms
+@calcom/web:dev:  ✓ Compiled in 7.1s
+@calcom/web:dev:  GET /api/auth/csrf 200 in 468ms
+@calcom/web:dev: 09[0m[0m:33[0m[0m:58[0m[0m:281[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 585ms
+@calcom/web:dev:  ✓ Compiled /settings/my-account/profile in 256ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev: 09[0m[0m:34[0m[0m:01[0m[0m:344[0m[0m [ERROR[0m[0m] getDeploymentKey Signature token not found in database or set in environment variable
+@calcom/web:dev: 09[0m[0m:34[0m[0m:02[0m[0m:005[0m[0m [ERROR[0m[0m] getDeploymentKey Signature token not found in database or set in environment variable
+@calcom/web:dev: react-i18next:: You will need to pass in an i18next instance by using initReactI18next
+@calcom/web:dev: VariableNode should implement "importJSON" method to ensure JSON and default HTML serialization works as expected
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  GET /api/trpc/me/get?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 401 in 2138ms
+@calcom/web:dev: [97;46m << query [1;97;46m #1 viewer.me.get [0m {
+@calcom/web:dev:   input: undefined,
+@calcom/web:dev:   result: [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:     meta: {
+@calcom/web:dev:       response: Response {
+@calcom/web:dev:         status: 401,
+@calcom/web:dev:         statusText: 'Unauthorized',
+@calcom/web:dev:         headers: Headers {
+@calcom/web:dev:           'x-content-type-options': 'nosniff',
+@calcom/web:dev:           'referrer-policy': 'strict-origin-when-cross-origin',
+@calcom/web:dev:           'content-type': 'application/json',
+@calcom/web:dev:           vary: 'Accept-Encoding',
+@calcom/web:dev:           'content-encoding': 'gzip',
+@calcom/web:dev:           date: 'Thu, 06 Nov 2025 09:34:04 GMT',
+@calcom/web:dev:           connection: 'keep-alive',
+@calcom/web:dev:           'keep-alive': 'timeout=5',
+@calcom/web:dev:           'transfer-encoding': 'chunked'
+@calcom/web:dev:         },
+@calcom/web:dev:         body: ReadableStream { locked: true, state: 'closed', supportsBYOB: true },
+@calcom/web:dev:         bodyUsed: true,
+@calcom/web:dev:         ok: false,
+@calcom/web:dev:         redirected: false,
+@calcom/web:dev:         type: 'basic',
+@calcom/web:dev:         url: 'http://localhost:3000/api/trpc/me/get?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D'
+@calcom/web:dev:       },
+@calcom/web:dev:       responseJSON: [Array]
+@calcom/web:dev:     },
+@calcom/web:dev:     shape: { message: 'UNAUTHORIZED', code: -32001, data: [Object] },
+@calcom/web:dev:     data: {
+@calcom/web:dev:       code: 'UNAUTHORIZED',
+@calcom/web:dev:       httpStatus: 401,
+@calcom/web:dev:       stack: 'TRPCError: UNAUTHORIZED\n' +
+@calcom/web:dev:         '    at /Users/Peter/Developer/swimming-lessons/apps/web/.next/server/chunks/[root-of-the-server]__2fc4cd5e._.js:8883:15\n' +
+@calcom/web:dev:         '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+@calcom/web:dev:         '    at async callRecursive (file:///Users/Peter/Developer/swimming-lessons/node_modules/@trpc/server/dist/unstable-core-do-not-import/procedureBuilder.mjs:125:32)\n' +
+@calcom/web:dev:         '    at async /Users/Peter/Developer/swimming-lessons/apps/web/.next/server/chunks/[root-of-the-server]__2fc4cd5e._.js:4738:20\n' +
+@calcom/web:dev:         '    at async callRecursive (file:///Users/Peter/Developer/swimming-lessons/node_modules/@trpc/server/dist/unstable-core-do-not-import/procedureBuilder.mjs:125:32)\n' +
+@calcom/web:dev:         '    at async procedure (file:///Users/Peter/Developer/swimming-lessons/node_modules/@trpc/server/dist/unstable-core-do-not-import/procedureBuilder.mjs:155:24)\n' +
+@calcom/web:dev:         '    at async inputToProcedureCall (file:///Users/Peter/Developer/swimming-lessons/node_modules/@trpc/server/dist/unstable-core-do-not-import/http/resolveHTTPResponse.mjs:47:22)\n' +
+@calcom/web:dev:         '    at async Promise.all (index 0)\n' +
+@calcom/web:dev:         '    at async resolveHTTPResponse (file:///Users/Peter/Developer/swimming-lessons/node_modules/@trpc/server/dist/unstable-core-do-not-import/http/resolveHTTPResponse.mjs:184:37)\n' +
+@calcom/web:dev:         '    at async file:///Users/Peter/Developer/swimming-lessons/node_modules/@trpc/server/dist/adapters/node-http/nodeHTTPRequestHandler.mjs:82:9\n' +
+@calcom/web:dev:         '    at async file:///Users/Peter/Developer/swimming-lessons/node_modules/@trpc/server/dist/adapters/next.mjs:47:9\n' +
+@calcom/web:dev:         '    at async apiResolver (/Users/Peter/Developer/swimming-lessons/node_modules/next/dist/compiled/next-server/pages-api-turbo.runtime.dev.js:2:4425)\n' +
+@calcom/web:dev:         '    at async PagesAPIRouteModule.render (/Users/Peter/Developer/swimming-lessons/node_modules/next/dist/compiled/next-server/pages-api-turbo.runtime.dev.js:2:5955)\n' +
+@calcom/web:dev:         '    at async Module.handler (/Users/Peter/Developer/swimming-lessons/apps/web/.next/server/chunks/node_modules_4c8804a0._.js:5625:13)\n' +
+@calcom/web:dev:         '    at async DevServer.runApi (/Users/Peter/Developer/swimming-lessons/node_modules/next/dist/server/next-server.js:766:9)\n' +
+@calcom/web:dev:         '    at async NextNodeServer.handleCatchallRenderRequest (/Users/Peter/Developer/swimming-lessons/node_modules/next/dist/server/next-server.js:390:37)\n' +
+@calcom/web:dev:         '    at async DevServer.handleRequestImpl (/Users/Peter/Developer/swimming-lessons/node_modules/next/dist/server/base-server.js:916:17)\n' +
+@calcom/web:dev:         '    at async /Users/Peter/Developer/swimming-lessons/node_modules/next/dist/server/dev/next-dev-server.js:399:20\n' +
+@calcom/web:dev:         '    at async Span.traceAsyncFn (/Users/Peter/Developer/swimming-lessons/node_modules/next/dist/trace/trace.js:157:20)\n' +
+@calcom/web:dev:         '    at async DevServer.handleRequest (/Users/Peter/Developer/swimming-lessons/node_modules/next/dist/server/dev/next-dev-server.js:395:24)\n' +
+@calcom/web:dev:         '    at async invokeRender (/Users/Peter/Developer/swimming-lessons/node_modules/next/dist/server/lib/router-server.js:240:21)\n' +
+@calcom/web:dev:         '    at async handleRequest (/Users/Peter/Developer/swimming-lessons/node_modules/next/dist/server/lib/router-server.js:437:24)\n' +
+@calcom/web:dev:         '    at async requestHandlerImpl (/Users/Peter/Developer/swimming-lessons/node_modules/next/dist/server/lib/router-server.js:485:13)\n' +
+@calcom/web:dev:         '    at async Server.requestListener (/Users/Peter/Developer/swimming-lessons/node_modules/next/dist/server/lib/start-server.js:226:13)',
+@calcom/web:dev:       path: 'get'
+@calcom/web:dev:     }
+@calcom/web:dev:   },
+@calcom/web:dev:   elapsedMs: 3007
+@calcom/web:dev: }
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '2324988693'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 7389ms
+@calcom/web:dev: 09[0m[0m:34[0m[0m:07[0m[0m:106[0m[0m [ERROR[0m[0m] getDeploymentKey Signature token not found in database or set in environment variable
+@calcom/web:dev:  GET /api/trpc/features/map?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 761ms
+@calcom/web:dev: 09[0m[0m:34[0m[0m:07[0m[0m:272[0m[0m [ERROR[0m[0m] getDeploymentKey Signature token not found in database or set in environment variable
+@calcom/web:dev: 09[0m[0m:34[0m[0m:07[0m[0m:283[0m[0m [ERROR[0m[0m] getDeploymentKey Signature token not found in database or set in environment variable
+@calcom/web:dev: 09[0m[0m:34[0m[0m:07[0m[0m:289[0m[0m [ERROR[0m[0m] getDeploymentKey Signature token not found in database or set in environment variable
+@calcom/web:dev: 09[0m[0m:34[0m[0m:07[0m[0m:334[0m[0m [ERROR[0m[0m] getDeploymentKey Signature token not found in database or set in environment variable
+@calcom/web:dev: 09[0m[0m:34[0m[0m:07[0m[0m:354[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  GET /api/auth/session 200 in 1018ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1162ms
+@calcom/web:dev: [PERF]: getEventTypesFromGroup(4) took 617.9345420002937ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 200 in 1886ms
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1895ms
+@calcom/web:dev:  GET /favicon.ico 200 in 2585ms
+@calcom/web:dev:  GET /api/trpc/attributes/getByUserId?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22userId%22%3A4%7D%7D%7D 200 in 450ms
+@calcom/web:dev: 09[0m[0m:34[0m[0m:09[0m[0m:404[0m[0m [ERROR[0m[0m] getDeploymentKey Signature token not found in database or set in environment variable
+@calcom/web:dev:  GET /instructor 200 in 1937ms
+@calcom/web:dev:  GET /api/auth/session 200 in 249ms
+@calcom/web:dev:  GET /favicon.ico 200 in 768ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 103ms
+@calcom/web:dev: 09[0m[0m:38[0m[0m:47[0m[0m:500[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 542ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '2324988693'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 945ms
+@calcom/web:dev:  GET /api/auth/session 200 in 933ms
+@calcom/web:dev:  GET /favicon.ico 200 in 1881ms
+@calcom/web:dev: 09[0m[0m:38[0m[0m:51[0m[0m:378[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  GET /api/trpc/features/map?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1363ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1580ms
+@calcom/web:dev: [PERF]: getEventTypesFromGroup(4) took 234.91775000095367ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 200 in 1647ms
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1656ms
+@calcom/web:dev: react-i18next:: You will need to pass in an i18next instance by using initReactI18next
+@calcom/web:dev:  GET /instructor 200 in 2882ms
+@calcom/web:dev:  GET /api/auth/session 200 in 2133ms
+@calcom/web:dev:  GET /favicon.ico 200 in 2850ms
+@calcom/web:dev:  ✓ Compiled in 477ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 331ms
+@calcom/web:dev: 09[0m[0m:44[0m[0m:52[0m[0m:406[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 996ms
+@calcom/web:dev:  ✓ Compiled /settings/my-account/profile in 76ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '2324988693'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 1005ms
+@calcom/web:dev:  GET /api/auth/session 200 in 1291ms
+@calcom/web:dev:  GET /favicon.ico 200 in 2102ms
+@calcom/web:dev:  GET /api/trpc/features/map?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1819ms
+@calcom/web:dev: 09[0m[0m:44[0m[0m:57[0m[0m:125[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1918ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1643ms
+@calcom/web:dev: [PERF]: getEventTypesFromGroup(4) took 333.70337500423193ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 200 in 2198ms
+@calcom/web:dev: react-i18next:: You will need to pass in an i18next instance by using initReactI18next
+@calcom/web:dev:  GET /api/trpc/attributes/getByUserId?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22userId%22%3A4%7D%7D%7D 200 in 2655ms
+@calcom/web:dev:  GET /instructor 200 in 4571ms
+@calcom/web:dev:  GET /api/auth/session 200 in 294ms
+@calcom/web:dev:  GET /favicon.ico 200 in 1308ms
+@calcom/web:dev:  ✓ Compiled in 1061ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 381ms
+@calcom/web:dev: 09[0m[0m:51[0m[0m:38[0m[0m:180[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 636ms
+@calcom/web:dev:  ✓ Compiled /settings/my-account/profile in 102ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '2324988693'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 1175ms
+@calcom/web:dev:  GET /api/auth/session 200 in 1197ms
+@calcom/web:dev:  GET /favicon.ico 200 in 2145ms
+@calcom/web:dev:  GET /api/trpc/features/map?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 2011ms
+@calcom/web:dev: 09[0m[0m:51[0m[0m:43[0m[0m:553[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 2109ms
+@calcom/web:dev: [PERF]: getEventTypesFromGroup(4) took 533.3740829974413ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 200 in 2503ms
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 2518ms
+@calcom/web:dev: react-i18next:: You will need to pass in an i18next instance by using initReactI18next
+@calcom/web:dev:  GET /instructor 200 in 4931ms
+@calcom/web:dev:  GET /api/auth/session 200 in 400ms
+@calcom/web:dev:  GET /favicon.ico 200 in 1985ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 171ms
+@calcom/web:dev: 09[0m[0m:55[0m[0m:13[0m[0m:870[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 758ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '2324988693'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 1599ms
+@calcom/web:dev:  GET /api/auth/session 200 in 4736ms
+@calcom/web:dev:  GET /api/trpc/features/map?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 4473ms
+@calcom/web:dev: 09[0m[0m:55[0m[0m:24[0m[0m:100[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 4994ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 4965ms
+@calcom/web:dev:  GET /favicon.ico 200 in 7311ms
+@calcom/web:dev: [PERF]: getEventTypesFromGroup(4) took 572.1255830004811ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 200 in 5536ms
+@calcom/web:dev:  GET /api/trpc/attributes/getByUserId?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22userId%22%3A4%7D%7D%7D 401 in 634ms
+@calcom/web:dev:  GET /swim 200 in 2326ms
+@calcom/web:dev:  GET /api/auth/session 200 in 1697ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includeOrgs%22%3Afalse%7D%7D%7D 200 in 1757ms
+@calcom/web:dev:  GET /api/trpc/me/get?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1703ms
+@calcom/web:dev:  GET /favicon.ico 200 in 2667ms
+@calcom/web:dev:  GET /instructor 200 in 748ms
+@calcom/web:dev:  GET /favicon.ico 200 in 388ms
+@calcom/web:dev:  GET /favicon.ico 200 in 336ms
+@calcom/web:dev:  GET /swim 200 in 416ms
+@calcom/web:dev:  GET /api/auth/session 200 in 1467ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includeOrgs%22%3Afalse%7D%7D%7D 200 in 1432ms
+@calcom/web:dev:  GET /api/trpc/me/get?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1487ms
+@calcom/web:dev:  GET /favicon.ico 200 in 3834ms
+@calcom/web:dev:  GET /manager 200 in 708ms
+@calcom/web:dev:  GET /favicon.ico 200 in 814ms
+@calcom/web:dev:  ✓ Compiled instrumentation Node.js in 2ms
+@calcom/web:dev:  ✓ Compiled instrumentation Edge in 2ms
+@calcom/web:dev:  ✓ Compiled middleware in 9ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 305ms
+@calcom/web:dev: 10[0m[0m:05[0m[0m:05[0m[0m:047[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 804ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '2324988693'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 1249ms
+@calcom/web:dev:  GET /favicon.ico 200 in 2568ms
+@calcom/web:dev:  GET /api/auth/session 200 in 967ms
+@calcom/web:dev:  GET /api/trpc/features/map?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 671ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1008ms
+@calcom/web:dev: 10[0m[0m:05[0m[0m:09[0m[0m:946[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev: [PERF]: getEventTypesFromGroup(4) took 120.90370800346136ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 200 in 1198ms
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1058ms
+@calcom/web:dev:  GET /swim 200 in 809ms
+@calcom/web:dev:  GET /api/auth/session 200 in 455ms
+@calcom/web:dev:  GET /api/trpc/me/get?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 545ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includeOrgs%22%3Afalse%7D%7D%7D 200 in 566ms
+@calcom/web:dev:  GET /favicon.ico 200 in 1146ms
+@calcom/web:dev:  GET /instructor 200 in 548ms
+@calcom/web:dev:  GET /favicon.ico 200 in 750ms
+@calcom/web:dev:  GET /favicon.ico 200 in 326ms
+@calcom/web:dev:  GET /swim 200 in 336ms
+@calcom/web:dev:  GET /api/auth/session 200 in 322ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includeOrgs%22%3Afalse%7D%7D%7D 200 in 375ms
+@calcom/web:dev:  GET /api/trpc/me/get?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 390ms
+@calcom/web:dev:  GET /favicon.ico 200 in 794ms
+@calcom/web:dev:  GET /manager 200 in 2727ms
+@calcom/web:dev:  GET /favicon.ico 200 in 378ms
+@calcom/web:dev:  ✓ Compiled in 1123ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 243ms
+@calcom/web:dev: 10[0m[0m:09[0m[0m:31[0m[0m:268[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 675ms
+@calcom/web:dev:  ✓ Compiled /settings/my-account/profile in 78ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '2324988693'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 1000ms
+@calcom/web:dev:  GET /api/auth/session 200 in 1514ms
+@calcom/web:dev:  GET /favicon.ico 200 in 6121ms
+@calcom/web:dev: 10[0m[0m:09[0m[0m:39[0m[0m:415[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 5930ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 6116ms
+@calcom/web:dev:  GET /api/trpc/features/map?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 5151ms
+@calcom/web:dev: [PERF]: getEventTypesFromGroup(4) took 861.2198339998722ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 200 in 6705ms
+@calcom/web:dev:  GET /swim 200 in 8228ms
+@calcom/web:dev:  GET /api/auth/session 200 in 1487ms
+@calcom/web:dev:  GET /api/trpc/me/get?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1498ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includeOrgs%22%3Afalse%7D%7D%7D 200 in 1529ms
+@calcom/web:dev:  GET /favicon.ico 200 in 2953ms
+@calcom/web:dev:  GET /instructor 200 in 353ms
+@calcom/web:dev:  GET /favicon.ico 200 in 376ms
+@calcom/web:dev:  GET /favicon.ico 200 in 384ms
+@calcom/web:dev:  GET /swim 200 in 598ms
+@calcom/web:dev:  GET /api/auth/session 200 in 9045ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includeOrgs%22%3Afalse%7D%7D%7D 200 in 4708ms
+@calcom/web:dev:  GET /api/trpc/me/get?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 9046ms
+@calcom/web:dev:  GET /favicon.ico 200 in 11943ms
+@calcom/web:dev:  GET /manager 200 in 2970ms
+@calcom/web:dev:  GET /favicon.ico 200 in 788ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 227ms
+@calcom/web:dev: 10[0m[0m:14[0m[0m:02[0m[0m:816[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 529ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '2324988693'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 1863ms
+@calcom/web:dev:  GET /api/auth/session 200 in 1803ms
+@calcom/web:dev:  GET /api/trpc/features/map?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1661ms
+@calcom/web:dev:  GET /favicon.ico 200 in 5759ms
+@calcom/web:dev: 10[0m[0m:14[0m[0m:12[0m[0m:893[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  ○ Compiling /instructor/booking/[id] ...
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 5997ms
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 6082ms
+@calcom/web:dev: [PERF]: getEventTypesFromGroup(4) took 930.4142080023885ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 200 in 6095ms
+@calcom/web:dev:  ✓ Compiled /instructor/booking/[id] in 1369ms
+@calcom/web:dev: react-i18next:: You will need to pass in an i18next instance by using initReactI18next
+@calcom/web:dev:  GET /instructor/booking/36 200 in 9516ms
+@calcom/web:dev:  GET /api/auth/session 200 in 2324ms
+@calcom/web:dev:  GET /favicon.ico 200 in 3735ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 470ms
+@calcom/web:dev: 10[0m[0m:19[0m[0m:42[0m[0m:477[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 767ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '2324988693'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 2369ms
+@calcom/web:dev:  GET /favicon.ico 200 in 3036ms
+@calcom/web:dev:  GET /api/auth/session 200 in 1379ms
+@calcom/web:dev: 10[0m[0m:19[0m[0m:53[0m[0m:094[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 5941ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 6263ms
+@calcom/web:dev:  GET /api/trpc/features/map?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 6132ms
+@calcom/web:dev: [PERF]: getEventTypesFromGroup(4) took 1008.8292500004172ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 200 in 6828ms
+@calcom/web:dev:  GET /api/trpc/attributes/getByUserId?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22userId%22%3A4%7D%7D%7D 401 in 1014ms
+@calcom/web:dev:  GET /instructor/booking/38 200 in 4371ms
+@calcom/web:dev:  GET /api/auth/session 200 in 1746ms
+@calcom/web:dev:  GET /favicon.ico 200 in 5018ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 193ms
+@calcom/web:dev: 10[0m[0m:24[0m[0m:32[0m[0m:600[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 606ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '2324988693'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 4018ms
+@calcom/web:dev:  GET /api/trpc/features/map?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 4282ms
+@calcom/web:dev:  GET /api/auth/session 200 in 8401ms
+@calcom/web:dev: 10[0m[0m:24[0m[0m:53[0m[0m:497[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 8148ms
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 5576ms
+@calcom/web:dev: [PERF]: getEventTypesFromGroup(4) took 260.6242500022054ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 200 in 5561ms
+@calcom/web:dev:  GET /favicon.ico 200 in 11362ms
+@calcom/web:dev:  GET /instructor/booking/39 200 in 6098ms
+@calcom/web:dev:  GET /api/auth/session 200 in 535ms
+@calcom/web:dev:  GET /favicon.ico 200 in 2571ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 174ms
+@calcom/web:dev: 10[0m[0m:29[0m[0m:25[0m[0m:935[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 574ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '2324988693'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 1304ms
+@calcom/web:dev:  GET /api/auth/session 200 in 1316ms
+@calcom/web:dev:  GET /favicon.ico 200 in 3036ms
+@calcom/web:dev:  GET /api/trpc/features/map?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1554ms
+@calcom/web:dev: 10[0m[0m:29[0m[0m:31[0m[0m:488[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1809ms
+@calcom/web:dev: [PERF]: getEventTypesFromGroup(4) took 221.291207998991ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 200 in 1886ms
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1885ms
+@calcom/web:dev:  GET /instructor/booking/40 200 in 2370ms
+@calcom/web:dev:  GET /api/auth/session 200 in 1318ms
+@calcom/web:dev:  GET /favicon.ico 200 in 2227ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 279ms
+@calcom/web:dev: 10[0m[0m:34[0m[0m:28[0m[0m:078[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 413ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '2324988693'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 2610ms
+@calcom/web:dev:  GET /api/auth/session 200 in 746ms
+@calcom/web:dev:  GET /api/trpc/features/map?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1122ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1184ms
+@calcom/web:dev: 10[0m[0m:34[0m[0m:34[0m[0m:378[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1399ms
+@calcom/web:dev: [PERF]: getEventTypesFromGroup(4) took 317.6523750051856ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 200 in 1667ms
+@calcom/web:dev:  GET /favicon.ico 200 in 2106ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 166ms
+@calcom/web:dev: 10[0m[0m:37[0m[0m:13[0m[0m:974[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 537ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '2324988693'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 1103ms
+@calcom/web:dev:  GET /favicon.ico 200 in 2019ms
+@calcom/web:dev:  ○ Compiling /auth/logout ...
+@calcom/web:dev:  GET /api/auth/session 200 in 3394ms
+@calcom/web:dev:  GET /api/trpc/features/map?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 3146ms
+@calcom/web:dev: 10[0m[0m:37[0m[0m:22[0m[0m:900[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 4795ms
+@calcom/web:dev: [PERF]: getEventTypesFromGroup(4) took 1508.5837090015411ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 200 in 4839ms
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 4843ms
+@calcom/web:dev:  GET /api/trpc/attributes/getByUserId?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22userId%22%3A4%7D%7D%7D 401 in 412ms
+@calcom/web:dev:  ✓ Compiled /auth/logout in 10.4s
+@calcom/web:dev:  GET /auth/logout 200 in 11846ms
+@calcom/web:dev: 10[0m[0m:37[0m[0m:32[0m[0m:572[0m[0m [WARN[0m[0m] orgDomains.ts Org support not enabled for hostname without "." {
+@calcom/web:dev:   hostname: [32m'localhost:3000'[39m
+@calcom/web:dev: }
+@calcom/web:dev:  GET /api/logo 200 in 2031ms
+@calcom/web:dev:  GET /api/auth/session 200 in 1381ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 299ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 266ms
+@calcom/web:dev:  GET /favicon.ico 200 in 1170ms
+@calcom/web:dev:  GET /api/auth/csrf 304 in 1581ms
+@calcom/web:dev:  POST /api/auth/signout 200 in 1673ms
+@calcom/web:dev: 10[0m[0m:37[0m[0m:35[0m[0m:626[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 2991ms
+@calcom/web:dev:  POST /api/auth/signout 200 in 435ms
+@calcom/web:dev:  GET /api/auth/session 200 in 372ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '2324988693'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 3250ms
+@calcom/web:dev:  POST /api/auth/_log 200 in 978ms
+@calcom/web:dev:  GET /api/auth/session 200 in 795ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 401 in 903ms
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 401 in 933ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 401 in 935ms
+@calcom/web:dev:  ○ Compiling /auth/login ...
+@calcom/web:dev:  GET /favicon.ico 200 in 2021ms
+@calcom/web:dev:  ✓ Compiled /auth/login in 1039ms
+@calcom/web:dev:  GET /auth/login?callbackUrl=http%3A%2F%2Flocalhost%3A3000%2Fsettings%2Fmy-account%2Fprofile 200 in 1855ms
+@calcom/web:dev:  GET /parent 200 in 3364ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 598ms
+@calcom/web:dev:  GET /api/auth/session 304 in 350ms
+@calcom/web:dev:  GET /favicon.ico 200 in 1016ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 453ms
+@calcom/web:dev: 11[0m[0m:02[0m[0m:51[0m[0m:617[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 589ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '2324988693'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 1628ms
+@calcom/web:dev:  GET /favicon.ico 200 in 3504ms
+@calcom/web:dev:  GET /api/auth/session 200 in 2405ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 2597ms
+@calcom/web:dev:  GET /api/trpc/features/map?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1535ms
+@calcom/web:dev: 11[0m[0m:02[0m[0m:58[0m[0m:346[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 2001ms
+@calcom/web:dev: [PERF]: getEventTypesFromGroup(4) took 262.1426250040531ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 200 in 2261ms
+@calcom/web:dev:  GET /auth/logout 200 in 3265ms
+@calcom/web:dev:  GET /api/auth/session 200 in 193ms
+@calcom/web:dev: 11[0m[0m:03[0m[0m:02[0m[0m:003[0m[0m [WARN[0m[0m] orgDomains.ts Org support not enabled for hostname without "." {
+@calcom/web:dev:   hostname: [32m'localhost:3000'[39m
+@calcom/web:dev: }
+@calcom/web:dev:  GET /api/logo 200 in 1324ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 1559ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 851ms
+@calcom/web:dev:  GET /favicon.ico 200 in 3950ms
+@calcom/web:dev:  GET /api/auth/csrf 304 in 815ms
+@calcom/web:dev:  POST /api/auth/signout 200 in 596ms
+@calcom/web:dev: 11[0m[0m:03[0m[0m:07[0m[0m:483[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 958ms
+@calcom/web:dev:  POST /api/auth/signout 200 in 142ms
+@calcom/web:dev:  GET /api/auth/session 200 in 109ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '2324988693'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 2647ms
+@calcom/web:dev:  POST /api/auth/_log 200 in 1330ms
+@calcom/web:dev:  GET /api/auth/session 200 in 974ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 401 in 998ms
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 401 in 1139ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 401 in 1289ms
+@calcom/web:dev:  GET /favicon.ico 200 in 2413ms
+@calcom/web:dev:  GET /auth/login?callbackUrl=http%3A%2F%2Flocalhost%3A3000%2Fsettings%2Fmy-account%2Fprofile 200 in 1917ms
+@calcom/web:dev:  GET /parent 200 in 2433ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 1292ms
+@calcom/web:dev:  GET /api/auth/session 304 in 837ms
+@calcom/web:dev:  GET /favicon.ico 200 in 1757ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 192ms
+@calcom/web:dev: 11[0m[0m:07[0m[0m:42[0m[0m:540[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 514ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '2324988693'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 1020ms
+@calcom/web:dev:  GET /api/auth/session 200 in 1467ms
+@calcom/web:dev:  GET /favicon.ico 200 in 3151ms
+@calcom/web:dev:  GET /api/trpc/features/map?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1906ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 2111ms
+@calcom/web:dev: 11[0m[0m:07[0m[0m:47[0m[0m:888[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 2255ms
+@calcom/web:dev: [PERF]: getEventTypesFromGroup(4) took 141.60308400541544ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 200 in 2247ms
+@calcom/web:dev:  GET /auth/logout 200 in 2112ms
+@calcom/web:dev: 11[0m[0m:07[0m[0m:51[0m[0m:274[0m[0m [WARN[0m[0m] orgDomains.ts Org support not enabled for hostname without "." {
+@calcom/web:dev:   hostname: [32m'localhost:3000'[39m
+@calcom/web:dev: }
+@calcom/web:dev:  GET /api/logo 200 in 2574ms
+@calcom/web:dev:  GET /api/auth/session 200 in 658ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 946ms
+@calcom/web:dev:  GET /favicon.ico 200 in 1780ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 400ms
+@calcom/web:dev: 11[0m[0m:07[0m[0m:55[0m[0m:781[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 2054ms
+@calcom/web:dev:  GET /api/auth/csrf 304 in 785ms
+@calcom/web:dev:  POST /api/auth/signout 200 in 857ms
+@calcom/web:dev:  POST /api/auth/signout 200 in 419ms
+@calcom/web:dev:  GET /api/auth/session 200 in 286ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '2324988693'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 5698ms
+@calcom/web:dev:  POST /api/auth/_log 200 in 3715ms
+@calcom/web:dev:  ○ Compiling /parent/swimmer/[id] ...
+@calcom/web:dev:  GET /api/auth/session 200 in 2203ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 401 in 3026ms
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 401 in 3030ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 401 in 3236ms
+@calcom/web:dev:  GET /favicon.ico 200 in 5869ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 604ms
+@calcom/web:dev:  GET /auth/login?callbackUrl=http%3A%2F%2Flocalhost%3A3000%2Fsettings%2Fmy-account%2Fprofile 200 in 3895ms
+@calcom/web:dev:  ✓ Compiled /parent/swimmer/[id] in 10.7s
+@calcom/web:dev: react-i18next:: You will need to pass in an i18next instance by using initReactI18next
+@calcom/web:dev:  GET /parent/swimmer/00000000-0000-0000-0000-e2e-swimmer 200 in 20038ms
+@calcom/web:dev:  GET /api/auth/session 304 in 666ms
+@calcom/web:dev:  GET /favicon.ico 200 in 2058ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 304ms
+@calcom/web:dev: 11[0m[0m:15[0m[0m:02[0m[0m:798[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 607ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev: 11[0m[0m:15[0m[0m:08[0m[0m:557[0m[0m [ERROR[0m[0m] getDeploymentKey Signature token not found in database or set in environment variable
+@calcom/web:dev: 11[0m[0m:15[0m[0m:08[0m[0m:572[0m[0m [ERROR[0m[0m] getDeploymentKey Signature token not found in database or set in environment variable
+@calcom/web:dev: react-i18next:: You will need to pass in an i18next instance by using initReactI18next
+@calcom/web:dev: VariableNode should implement "importJSON" method to ensure JSON and default HTML serialization works as expected
+@calcom/web:dev:  GET /api/trpc/me/get?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 401 in 2929ms
+@calcom/web:dev: [97;46m << query [1;97;46m #1 viewer.me.get [0m {
+@calcom/web:dev:   input: undefined,
+@calcom/web:dev:   result: [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:     meta: {
+@calcom/web:dev:       response: Response {
+@calcom/web:dev:         status: 401,
+@calcom/web:dev:         statusText: 'Unauthorized',
+@calcom/web:dev:         headers: Headers {
+@calcom/web:dev:           'x-content-type-options': 'nosniff',
+@calcom/web:dev:           'referrer-policy': 'strict-origin-when-cross-origin',
+@calcom/web:dev:           'content-type': 'application/json',
+@calcom/web:dev:           vary: 'Accept-Encoding',
+@calcom/web:dev:           'content-encoding': 'gzip',
+@calcom/web:dev:           date: 'Thu, 06 Nov 2025 11:15:16 GMT',
+@calcom/web:dev:           connection: 'keep-alive',
+@calcom/web:dev:           'keep-alive': 'timeout=5',
+@calcom/web:dev:           'transfer-encoding': 'chunked'
+@calcom/web:dev:         },
+@calcom/web:dev:         body: ReadableStream { locked: true, state: 'closed', supportsBYOB: true },
+@calcom/web:dev:         bodyUsed: true,
+@calcom/web:dev:         ok: false,
+@calcom/web:dev:         redirected: false,
+@calcom/web:dev:         type: 'basic',
+@calcom/web:dev:         url: 'http://localhost:3000/api/trpc/me/get?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D'
+@calcom/web:dev:       },
+@calcom/web:dev:       responseJSON: [Array]
+@calcom/web:dev:     },
+@calcom/web:dev:     shape: { message: 'UNAUTHORIZED', code: -32001, data: [Object] },
+@calcom/web:dev:     data: {
+@calcom/web:dev:       code: 'UNAUTHORIZED',
+@calcom/web:dev:       httpStatus: 401,
+@calcom/web:dev:       stack: 'TRPCError: UNAUTHORIZED\n' +
+@calcom/web:dev:         '    at /Users/Peter/Developer/swimming-lessons/apps/web/.next/server/chunks/[root-of-the-server]__2fc4cd5e._.js:8883:15\n' +
+@calcom/web:dev:         '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+@calcom/web:dev:         '    at async callRecursive (file:///Users/Peter/Developer/swimming-lessons/node_modules/@trpc/server/dist/unstable-core-do-not-import/procedureBuilder.mjs:125:32)\n' +
+@calcom/web:dev:         '    at async /Users/Peter/Developer/swimming-lessons/apps/web/.next/server/chunks/[root-of-the-server]__2fc4cd5e._.js:4738:20\n' +
+@calcom/web:dev:         '    at async callRecursive (file:///Users/Peter/Developer/swimming-lessons/node_modules/@trpc/server/dist/unstable-core-do-not-import/procedureBuilder.mjs:125:32)\n' +
+@calcom/web:dev:         '    at async procedure (file:///Users/Peter/Developer/swimming-lessons/node_modules/@trpc/server/dist/unstable-core-do-not-import/procedureBuilder.mjs:155:24)\n' +
+@calcom/web:dev:         '    at async inputToProcedureCall (file:///Users/Peter/Developer/swimming-lessons/node_modules/@trpc/server/dist/unstable-core-do-not-import/http/resolveHTTPResponse.mjs:47:22)\n' +
+@calcom/web:dev:         '    at async Promise.all (index 0)\n' +
+@calcom/web:dev:         '    at async resolveHTTPResponse (file:///Users/Peter/Developer/swimming-lessons/node_modules/@trpc/server/dist/unstable-core-do-not-import/http/resolveHTTPResponse.mjs:184:37)\n' +
+@calcom/web:dev:         '    at async file:///Users/Peter/Developer/swimming-lessons/node_modules/@trpc/server/dist/adapters/node-http/nodeHTTPRequestHandler.mjs:82:9\n' +
+@calcom/web:dev:         '    at async file:///Users/Peter/Developer/swimming-lessons/node_modules/@trpc/server/dist/adapters/next.mjs:47:9\n' +
+@calcom/web:dev:         '    at async apiResolver (/Users/Peter/Developer/swimming-lessons/node_modules/next/dist/compiled/next-server/pages-api-turbo.runtime.dev.js:2:4425)\n' +
+@calcom/web:dev:         '    at async PagesAPIRouteModule.render (/Users/Peter/Developer/swimming-lessons/node_modules/next/dist/compiled/next-server/pages-api-turbo.runtime.dev.js:2:5955)\n' +
+@calcom/web:dev:         '    at async Module.handler (/Users/Peter/Developer/swimming-lessons/apps/web/.next/server/chunks/node_modules_4c8804a0._.js:5625:13)\n' +
+@calcom/web:dev:         '    at async DevServer.runApi (/Users/Peter/Developer/swimming-lessons/node_modules/next/dist/server/next-server.js:766:9)\n' +
+@calcom/web:dev:         '    at async NextNodeServer.handleCatchallRenderRequest (/Users/Peter/Developer/swimming-lessons/node_modules/next/dist/server/next-server.js:390:37)\n' +
+@calcom/web:dev:         '    at async DevServer.handleRequestImpl (/Users/Peter/Developer/swimming-lessons/node_modules/next/dist/server/base-server.js:916:17)\n' +
+@calcom/web:dev:         '    at async /Users/Peter/Developer/swimming-lessons/node_modules/next/dist/server/dev/next-dev-server.js:399:20\n' +
+@calcom/web:dev:         '    at async Span.traceAsyncFn (/Users/Peter/Developer/swimming-lessons/node_modules/next/dist/trace/trace.js:157:20)\n' +
+@calcom/web:dev:         '    at async DevServer.handleRequest (/Users/Peter/Developer/swimming-lessons/node_modules/next/dist/server/dev/next-dev-server.js:395:24)\n' +
+@calcom/web:dev:         '    at async invokeRender (/Users/Peter/Developer/swimming-lessons/node_modules/next/dist/server/lib/router-server.js:240:21)\n' +
+@calcom/web:dev:         '    at async handleRequest (/Users/Peter/Developer/swimming-lessons/node_modules/next/dist/server/lib/router-server.js:437:24)\n' +
+@calcom/web:dev:         '    at async requestHandlerImpl (/Users/Peter/Developer/swimming-lessons/node_modules/next/dist/server/lib/router-server.js:485:13)\n' +
+@calcom/web:dev:         '    at async Server.requestListener (/Users/Peter/Developer/swimming-lessons/node_modules/next/dist/server/lib/start-server.js:226:13)',
+@calcom/web:dev:       path: 'get'
+@calcom/web:dev:     }
+@calcom/web:dev:   },
+@calcom/web:dev:   elapsedMs: 7560
+@calcom/web:dev: }
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '196318357'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 14357ms
+@calcom/web:dev:  GET /api/auth/session 200 in 4986ms
+@calcom/web:dev:  GET /api/trpc/features/map?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 5104ms
+@calcom/web:dev: 11[0m[0m:15[0m[0m:23[0m[0m:788[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 5292ms
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 5457ms
+@calcom/web:dev: [PERF]: getEventTypesFromGroup(4) took 579.9149580001831ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 200 in 5723ms
+@calcom/web:dev:  GET /favicon.ico 200 in 6600ms
+@calcom/web:dev:  GET /api/trpc/attributes/getByUserId?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22userId%22%3A4%7D%7D%7D 401 in 305ms
+@calcom/web:dev:  GET /auth/logout 200 in 2078ms
+@calcom/web:dev: 11[0m[0m:15[0m[0m:27[0m[0m:227[0m[0m [WARN[0m[0m] orgDomains.ts Org support not enabled for hostname without "." {
+@calcom/web:dev:   hostname: [32m'localhost:3000'[39m
+@calcom/web:dev: }
+@calcom/web:dev:  GET /api/logo 200 in 1760ms
+@calcom/web:dev:  GET /api/auth/session 200 in 763ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 1250ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 410ms
+@calcom/web:dev:  GET /favicon.ico 200 in 2315ms
+@calcom/web:dev:  GET /api/auth/csrf 304 in 350ms
+@calcom/web:dev:  POST /api/auth/signout 200 in 299ms
+@calcom/web:dev: 11[0m[0m:15[0m[0m:30[0m[0m:208[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 727ms
+@calcom/web:dev:  POST /api/auth/signout 200 in 250ms
+@calcom/web:dev:  GET /api/auth/session 200 in 239ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '196318357'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 3917ms
+@calcom/web:dev:  POST /api/auth/_log 200 in 1147ms
+@calcom/web:dev:  GET /api/auth/session 200 in 862ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 401 in 1378ms
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 401 in 1402ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 401 in 1237ms
+@calcom/web:dev:  GET /favicon.ico 200 in 2381ms
+@calcom/web:dev:  GET /auth/login?callbackUrl=http%3A%2F%2Flocalhost%3A3000%2Fsettings%2Fmy-account%2Fprofile 200 in 1222ms
+@calcom/web:dev:  GET /parent/swimmer/00000000-0000-0000-0000-e2e-swimmer 200 in 1561ms
+@calcom/web:dev:  ○ Compiling /api/trpc/swim/[trpc] ...
+@calcom/web:dev:  GET /api/auth/csrf 200 in 1105ms
+@calcom/web:dev:  GET /api/auth/session 304 in 426ms
+@calcom/web:dev:  GET /favicon.ico 200 in 1674ms
+@calcom/web:dev:  ✓ Compiled /api/trpc/swim/[trpc] in 2.4s
+@calcom/web:dev:  GET /api/trpc/swim/attendance.listBySwimmer,progressNotes.listMineBySwimmer?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22swimmerId%22%3A%2200000000-0000-0000-0000-e2e-swimmer%22%7D%7D%2C%221%22%3A%7B%22json%22%3A%7B%22swimmerId%22%3A%2200000000-0000-0000-0000-e2e-swimmer%22%7D%7D%7D 401 in 240ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 336ms
+@calcom/web:dev: 11[0m[0m:17[0m[0m:31[0m[0m:236[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 453ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '196318357'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 1142ms
+@calcom/web:dev:  GET /favicon.ico 200 in 2318ms
+@calcom/web:dev:  GET /api/auth/session 200 in 1583ms
+@calcom/web:dev:  GET /api/trpc/features/map?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1601ms
+@calcom/web:dev: 11[0m[0m:17[0m[0m:36[0m[0m:236[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1990ms
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 2064ms
+@calcom/web:dev: [PERF]: getEventTypesFromGroup(4) took 156.83558299392462ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 200 in 2082ms
+@calcom/web:dev:  GET /auth/logout 200 in 2206ms
+@calcom/web:dev:  GET /api/auth/session 200 in 155ms
+@calcom/web:dev: 11[0m[0m:17[0m[0m:39[0m[0m:540[0m[0m [WARN[0m[0m] orgDomains.ts Org support not enabled for hostname without "." {
+@calcom/web:dev:   hostname: [32m'localhost:3000'[39m
+@calcom/web:dev: }
+@calcom/web:dev:  GET /api/logo 200 in 1641ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 1002ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 652ms
+@calcom/web:dev:  GET /favicon.ico 200 in 1493ms
+@calcom/web:dev:  POST /api/auth/signout 200 in 645ms
+@calcom/web:dev:  GET /api/auth/csrf 304 in 1286ms
+@calcom/web:dev: 11[0m[0m:17[0m[0m:44[0m[0m:745[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 3872ms
+@calcom/web:dev:  GET /api/auth/session 200 in 660ms
+@calcom/web:dev:  POST /api/auth/signout 200 in 384ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '196318357'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 1878ms
+@calcom/web:dev:  POST /api/auth/_log 200 in 815ms
+@calcom/web:dev:  GET /api/auth/session 200 in 1057ms
+@calcom/web:dev:  GET /favicon.ico 200 in 3358ms
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 2832ms
+@calcom/web:dev: 11[0m[0m:17[0m[0m:51[0m[0m:358[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 2892ms
+@calcom/web:dev: [PERF]: getEventTypesFromGroup(6) took 262.0269589945674ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 200 in 3126ms
+@calcom/web:dev:  GET /api/trpc/attributes/getByUserId?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22userId%22%3A6%7D%7D%7D 401 in 581ms
+@calcom/web:dev:  GET /parent/swimmer/00000000-0000-0000-0000-e2e-swimmer 200 in 3579ms
+@calcom/web:dev:  GET /api/auth/session 200 in 743ms
+@calcom/web:dev: 11[0m[0m:17[0m[0m:54[0m[0m:488[0m[0m [ERROR[0m[0m] getDeploymentKey Signature token not found in database or set in environment variable
+@calcom/web:dev: 11[0m[0m:17[0m[0m:54[0m[0m:506[0m[0m [ERROR[0m[0m] getDeploymentKey Signature token not found in database or set in environment variable
+@calcom/web:dev:  GET /api/trpc/swim/attendance.listBySwimmer,progressNotes.listMineBySwimmer?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22swimmerId%22%3A%2200000000-0000-0000-0000-e2e-swimmer%22%7D%7D%2C%221%22%3A%7B%22json%22%3A%7B%22swimmerId%22%3A%2200000000-0000-0000-0000-e2e-swimmer%22%7D%7D%7D 400 in 993ms
+@calcom/web:dev:  GET /favicon.ico 200 in 1647ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 1093ms
+@calcom/web:dev: 11[0m[0m:21[0m[0m:23[0m[0m:476[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 509ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '196318357'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 1438ms
+@calcom/web:dev:  GET /favicon.ico 200 in 3446ms
+@calcom/web:dev:  GET /api/trpc/features/map?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 833ms
+@calcom/web:dev:  GET /api/auth/session 200 in 1553ms
+@calcom/web:dev: 11[0m[0m:21[0m[0m:29[0m[0m:252[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1230ms
+@calcom/web:dev: [PERF]: getEventTypesFromGroup(4) took 201.92570799589157ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 200 in 1236ms
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1442ms
+@calcom/web:dev:  GET /auth/logout 200 in 2290ms
+@calcom/web:dev: 11[0m[0m:21[0m[0m:32[0m[0m:741[0m[0m [WARN[0m[0m] orgDomains.ts Org support not enabled for hostname without "." {
+@calcom/web:dev:   hostname: [32m'localhost:3000'[39m
+@calcom/web:dev: }
+@calcom/web:dev:  GET /api/auth/session 200 in 433ms
+@calcom/web:dev:  GET /api/logo 200 in 1984ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 832ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 922ms
+@calcom/web:dev:  GET /favicon.ico 200 in 1945ms
+@calcom/web:dev:  POST /api/auth/signout 200 in 2392ms
+@calcom/web:dev:  GET /api/auth/csrf 304 in 2379ms
+@calcom/web:dev: 11[0m[0m:21[0m[0m:38[0m[0m:638[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 1114ms
+@calcom/web:dev:  GET /api/auth/session 200 in 292ms
+@calcom/web:dev:  POST /api/auth/signout 200 in 265ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '196318357'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 2789ms
+@calcom/web:dev:  POST /api/auth/_log 200 in 1133ms
+@calcom/web:dev:  GET /api/auth/session 200 in 1023ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1080ms
+@calcom/web:dev: 11[0m[0m:21[0m[0m:47[0m[0m:132[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  GET /favicon.ico 200 in 4828ms
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1338ms
+@calcom/web:dev: [PERF]: getEventTypesFromGroup(6) took 315.7447080016136ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 200 in 1763ms
+@calcom/web:dev:  GET /parent/swimmer/00000000-0000-0000-0000-e2e-swimmer 200 in 6161ms
+@calcom/web:dev:  GET /api/trpc/swim/attendance.listBySwimmer,progressNotes.listMineBySwimmer?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22swimmerId%22%3A%2200000000-0000-0000-0000-e2e-swimmer%22%7D%7D%2C%221%22%3A%7B%22json%22%3A%7B%22swimmerId%22%3A%2200000000-0000-0000-0000-e2e-swimmer%22%7D%7D%7D 400 in 885ms
+@calcom/web:dev:  GET /api/auth/session 200 in 1060ms
+@calcom/web:dev:  GET /favicon.ico 200 in 2038ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 160ms
+@calcom/web:dev: 11[0m[0m:23[0m[0m:12[0m[0m:329[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 437ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '196318357'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 999ms
+@calcom/web:dev:  GET /favicon.ico 200 in 3403ms
+@calcom/web:dev:  GET /api/auth/session 200 in 2280ms
+@calcom/web:dev:  GET /api/trpc/features/map?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 2160ms
+@calcom/web:dev: 11[0m[0m:23[0m[0m:18[0m[0m:518[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 2536ms
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 2685ms
+@calcom/web:dev: [PERF]: getEventTypesFromGroup(4) took 257.35254199802876ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 200 in 2726ms
+@calcom/web:dev:  GET /auth/logout 200 in 3046ms
+@calcom/web:dev: 11[0m[0m:23[0m[0m:22[0m[0m:259[0m[0m [WARN[0m[0m] orgDomains.ts Org support not enabled for hostname without "." {
+@calcom/web:dev:   hostname: [32m'localhost:3000'[39m
+@calcom/web:dev: }
+@calcom/web:dev:  GET /api/logo 200 in 2741ms
+@calcom/web:dev:  GET /api/auth/session 200 in 911ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 189ms
+@calcom/web:dev:  GET /favicon.ico 200 in 810ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 1126ms
+@calcom/web:dev: 11[0m[0m:23[0m[0m:26[0m[0m:560[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 2204ms
+@calcom/web:dev:  GET /api/auth/csrf 304 in 1080ms
+@calcom/web:dev:  POST /api/auth/signout 200 in 1123ms
+@calcom/web:dev:  POST /api/auth/signout 200 in 5895ms
+@calcom/web:dev:  GET /api/auth/session 200 in 5523ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '196318357'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 9720ms
+@calcom/web:dev:  POST /api/auth/_log 200 in 3408ms
+@calcom/web:dev:  GET /api/auth/session 200 in 671ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 401 in 1246ms
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 401 in 1400ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 401 in 1408ms
+@calcom/web:dev:  GET /favicon.ico 200 in 2395ms
+@calcom/web:dev:  POST /api/trpc/swim/progressNotes.listMineBySwimmer?batch=1 400 in 659ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 108ms
+@calcom/web:dev:  GET /auth/login?callbackUrl=http%3A%2F%2Flocalhost%3A3000%2Fsettings%2Fmy-account%2Fprofile 200 in 2157ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 539ms
+@calcom/web:dev: 11[0m[0m:25[0m[0m:11[0m[0m:641[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 1073ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '196318357'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 2131ms
+@calcom/web:dev:  GET /favicon.ico 200 in 6563ms
+@calcom/web:dev:  GET /api/auth/session 200 in 2791ms
+@calcom/web:dev:  GET /api/trpc/features/map?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1264ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 2189ms
+@calcom/web:dev: 11[0m[0m:25[0m[0m:22[0m[0m:555[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 2564ms
+@calcom/web:dev: [PERF]: getEventTypesFromGroup(4) took 236.28799999505281ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 200 in 2410ms
+@calcom/web:dev:  GET /api/trpc/attributes/getByUserId?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22userId%22%3A4%7D%7D%7D 401 in 370ms
+@calcom/web:dev:  GET /auth/logout 200 in 1835ms
+@calcom/web:dev: 11[0m[0m:25[0m[0m:24[0m[0m:821[0m[0m [WARN[0m[0m] orgDomains.ts Org support not enabled for hostname without "." {
+@calcom/web:dev:   hostname: [32m'localhost:3000'[39m
+@calcom/web:dev: }
+@calcom/web:dev:  GET /api/logo 200 in 1120ms
+@calcom/web:dev:  GET /api/auth/session 200 in 436ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 191ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 161ms
+@calcom/web:dev:  GET /favicon.ico 200 in 739ms
+@calcom/web:dev:  GET /api/auth/csrf 304 in 2207ms
+@calcom/web:dev:  POST /api/auth/signout 200 in 3170ms
+@calcom/web:dev: 11[0m[0m:25[0m[0m:28[0m[0m:885[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 3868ms
+@calcom/web:dev:  POST /api/auth/signout 200 in 2042ms
+@calcom/web:dev:  GET /api/auth/session 200 in 680ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '196318357'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 4960ms
+@calcom/web:dev:  POST /api/auth/_log 200 in 686ms
+@calcom/web:dev:  GET /api/auth/session 200 in 1582ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 401 in 2430ms
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 401 in 2514ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 401 in 2516ms
+@calcom/web:dev:  GET /favicon.ico 200 in 4499ms
+@calcom/web:dev:  POST /api/trpc/swim/progressNotes.listMineBySwimmer?batch=1 400 in 685ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 160ms
+@calcom/web:dev:  GET /auth/login?callbackUrl=http%3A%2F%2Flocalhost%3A3000%2Fsettings%2Fmy-account%2Fprofile 200 in 2993ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 101ms
+@calcom/web:dev: 11[0m[0m:26[0m[0m:44[0m[0m:482[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 487ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '196318357'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 977ms
+@calcom/web:dev:  GET /favicon.ico 200 in 347ms
+@calcom/web:dev:  GET /api/auth/session 200 in 652ms
+@calcom/web:dev: 11[0m[0m:26[0m[0m:49[0m[0m:108[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  GET /api/trpc/features/map?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 2256ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 2387ms
+@calcom/web:dev: [PERF]: getEventTypesFromGroup(4) took 790.4993330016732ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 200 in 2484ms
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 2473ms
+@calcom/web:dev:  GET /auth/logout 200 in 3532ms
+@calcom/web:dev:  GET /api/auth/session 200 in 196ms
+@calcom/web:dev: 11[0m[0m:26[0m[0m:53[0m[0m:112[0m[0m [WARN[0m[0m] orgDomains.ts Org support not enabled for hostname without "." {
+@calcom/web:dev:   hostname: [32m'localhost:3000'[39m
+@calcom/web:dev: }
+@calcom/web:dev:  GET /api/logo 200 in 1527ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 687ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 715ms
+@calcom/web:dev:  GET /favicon.ico 200 in 1264ms
+@calcom/web:dev:  GET /api/auth/csrf 304 in 479ms
+@calcom/web:dev:  POST /api/auth/signout 200 in 613ms
+@calcom/web:dev: 11[0m[0m:26[0m[0m:55[0m[0m:264[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 1387ms
+@calcom/web:dev:  POST /api/auth/signout 200 in 1952ms
+@calcom/web:dev:  GET /api/auth/session 200 in 1048ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '196318357'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 6550ms
+@calcom/web:dev:  POST /api/auth/_log 200 in 2281ms
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 401 in 513ms
+@calcom/web:dev:  GET /api/auth/session 200 in 739ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 401 in 974ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 401 in 956ms
+@calcom/web:dev:  GET /favicon.ico 200 in 2784ms
+@calcom/web:dev:  POST /api/trpc/swim/progressNotes.listMineBySwimmer 404 in 1829ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 219ms
+@calcom/web:dev:  GET /auth/login?callbackUrl=http%3A%2F%2Flocalhost%3A3000%2Fsettings%2Fmy-account%2Fprofile 200 in 3701ms
+@calcom/web:dev: 11[0m[0m:27[0m[0m:12[0m[0m:318[0m[0m [WARN[0m[0m] orgDomains.ts Org support not enabled for hostname without "." {
+@calcom/web:dev:   hostname: [32m'localhost:3000'[39m
+@calcom/web:dev: }
+@calcom/web:dev:  GET /api/auth/csrf 200 in 151ms
+@calcom/web:dev: 11[0m[0m:28[0m[0m:04[0m[0m:819[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 525ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '196318357'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 934ms
+@calcom/web:dev:  GET /api/auth/session 200 in 794ms
+@calcom/web:dev:  GET /favicon.ico 200 in 1158ms
+@calcom/web:dev: 11[0m[0m:28[0m[0m:08[0m[0m:475[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  GET /api/trpc/features/map?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1435ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1703ms
+@calcom/web:dev: [PERF]: getEventTypesFromGroup(4) took 355.98375000059605ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 200 in 1787ms
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1781ms
+@calcom/web:dev:  GET /auth/logout 200 in 2382ms
+@calcom/web:dev: 11[0m[0m:28[0m[0m:10[0m[0m:654[0m[0m [WARN[0m[0m] orgDomains.ts Org support not enabled for hostname without "." {
+@calcom/web:dev:   hostname: [32m'localhost:3000'[39m
+@calcom/web:dev: }
+@calcom/web:dev:  GET /api/logo 200 in 1202ms
+@calcom/web:dev:  GET /api/auth/session 200 in 573ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 253ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 125ms
+@calcom/web:dev:  GET /favicon.ico 200 in 763ms
+@calcom/web:dev: 11[0m[0m:28[0m[0m:13[0m[0m:321[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/signout 200 in 1373ms
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 2375ms
+@calcom/web:dev:  GET /api/auth/csrf 304 in 1397ms
+@calcom/web:dev:  GET /api/auth/session 200 in 548ms
+@calcom/web:dev:  POST /api/auth/signout 200 in 454ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '196318357'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 2862ms
+@calcom/web:dev:  POST /api/auth/_log 200 in 764ms
+@calcom/web:dev:  GET /api/auth/session 200 in 875ms
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 401 in 929ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 401 in 931ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 401 in 964ms
+@calcom/web:dev:  GET /favicon.ico 200 in 2286ms
+@calcom/web:dev:  GET /api/trpc/swim/progressNotes.listMineBySwimmer?input=%7B%22swimmerId%22%3A%2200000000-0000-0000-0000-e2e-swimmer%22%7D 401 in 245ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 239ms
+@calcom/web:dev:  GET /auth/login?callbackUrl=http%3A%2F%2Flocalhost%3A3000%2Fsettings%2Fmy-account%2Fprofile 200 in 2128ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 260ms
+@calcom/web:dev: 11[0m[0m:29[0m[0m:16[0m[0m:312[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 420ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '196318357'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 1218ms
+@calcom/web:dev:  GET /api/auth/session 200 in 2023ms
+@calcom/web:dev:  GET /favicon.ico 200 in 3353ms
+@calcom/web:dev:  GET /api/trpc/features/map?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 3012ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 3188ms
+@calcom/web:dev: 11[0m[0m:29[0m[0m:22[0m[0m:910[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 3424ms
+@calcom/web:dev: [PERF]: getEventTypesFromGroup(4) took 240.8779999986291ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 200 in 3454ms
+@calcom/web:dev:  GET /auth/logout 200 in 3371ms
+@calcom/web:dev:  GET /api/auth/session 200 in 122ms
+@calcom/web:dev: 11[0m[0m:29[0m[0m:26[0m[0m:406[0m[0m [WARN[0m[0m] orgDomains.ts Org support not enabled for hostname without "." {
+@calcom/web:dev:   hostname: [32m'localhost:3000'[39m
+@calcom/web:dev: }
+@calcom/web:dev:  GET /api/logo 200 in 2214ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 407ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 753ms
+@calcom/web:dev:  GET /favicon.ico 200 in 1702ms
+@calcom/web:dev:  POST /api/auth/signout 200 in 811ms
+@calcom/web:dev:  GET /api/auth/csrf 304 in 813ms
+@calcom/web:dev: 11[0m[0m:29[0m[0m:31[0m[0m:397[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  GET /api/auth/session 200 in 3591ms
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 3869ms
+@calcom/web:dev:  POST /api/auth/signout 200 in 3533ms
+@calcom/web:dev:  GET /api/auth/session 200 in 277ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '196318357'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 2674ms
+@calcom/web:dev:  POST /api/auth/_log 200 in 923ms
+@calcom/web:dev:  POST /api/auth/_log 200 in 991ms
+@calcom/web:dev:  GET /api/auth/session 200 in 1383ms
+@calcom/web:dev: 11[0m[0m:29[0m[0m:40[0m[0m:154[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  GET /favicon.ico 200 in 3348ms
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1298ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 1404ms
+@calcom/web:dev: [PERF]: getEventTypesFromGroup(6) took 189.22387500107288ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 200 in 1395ms
+@calcom/web:dev:  GET /api/trpc/swim/progressNotes.listMineBySwimmer?input=%7B%22swimmerId%22%3A%2200000000-0000-0000-0000-e2e-swimmer%22%7D 400 in 1470ms
+@calcom/web:dev:  GET /api/trpc/attributes/getByUserId?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22userId%22%3A6%7D%7D%7D 401 in 388ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 733ms
+@calcom/web:dev: 11[0m[0m:50[0m[0m:54[0m[0m:617[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 736ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '196318357'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 1806ms
+@calcom/web:dev:  GET /favicon.ico 200 in 5937ms
+@calcom/web:dev:  GET /api/auth/session 200 in 4653ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 5159ms
+@calcom/web:dev: 11[0m[0m:51[0m[0m:04[0m[0m:502[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  GET /api/trpc/features/map?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 4336ms
+@calcom/web:dev: [PERF]: getEventTypesFromGroup(4) took 449.08758299797773ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 200 in 5651ms
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 5641ms
+@calcom/web:dev:  GET /auth/logout 200 in 5880ms
+@calcom/web:dev: 11[0m[0m:51[0m[0m:11[0m[0m:687[0m[0m [WARN[0m[0m] orgDomains.ts Org support not enabled for hostname without "." {
+@calcom/web:dev:   hostname: [32m'localhost:3000'[39m
+@calcom/web:dev: }
+@calcom/web:dev:  GET /api/logo 200 in 3922ms
+@calcom/web:dev:  GET /api/auth/session 200 in 3773ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 1422ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 796ms
+@calcom/web:dev:  GET /favicon.ico 200 in 4646ms
+@calcom/web:dev:  GET /api/auth/csrf 304 in 3492ms
+@calcom/web:dev:  POST /api/auth/signout 200 in 5616ms
+@calcom/web:dev: 11[0m[0m:51[0m[0m:23[0m[0m:806[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 7408ms
+@calcom/web:dev:  POST /api/auth/signout 200 in 1827ms
+@calcom/web:dev:  GET /api/auth/session 200 in 483ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '196318357'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 11808ms
+@calcom/web:dev:  POST /api/auth/_log 200 in 2425ms
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 401 in 3115ms
+@calcom/web:dev:  GET /api/auth/session 200 in 3208ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 401 in 2428ms
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 401 in 2441ms
+@calcom/web:dev:  GET /api/trpc/swim/progressNotes.listMineBySwimmer?input=%7B%22json%22%3A%7B%22swimmerId%22%3A%2200000000-0000-0000-0000-e2e-swimmer%22%7D%7D 401 in 1114ms
+@calcom/web:dev:  GET /favicon.ico 200 in 6186ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 123ms
+@calcom/web:dev:  GET /auth/login?callbackUrl=http%3A%2F%2Flocalhost%3A3000%2Fsettings%2Fmy-account%2Fprofile 200 in 1682ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 819ms
+@calcom/web:dev: 12[0m[0m:33[0m[0m:05[0m[0m:991[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 840ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '196318357'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 1486ms
+@calcom/web:dev:  GET /favicon.ico 200 in 9807ms
+@calcom/web:dev:  GET /api/auth/session 200 in 9630ms
+@calcom/web:dev: 12[0m[0m:33[0m[0m:21[0m[0m:172[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 10024ms
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 9910ms
+@calcom/web:dev: [PERF]: getEventTypesFromGroup(4) took 391.750999994576ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 200 in 10548ms
+@calcom/web:dev:  GET /api/trpc/features/map?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 6806ms
+@calcom/web:dev:  GET /api/trpc/attributes/getByUserId?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22userId%22%3A4%7D%7D%7D 401 in 1000ms
+@calcom/web:dev:  GET /auth/logout 200 in 5885ms
+@calcom/web:dev:  GET /api/auth/session 200 in 172ms
+@calcom/web:dev: 12[0m[0m:33[0m[0m:25[0m[0m:762[0m[0m [WARN[0m[0m] orgDomains.ts Org support not enabled for hostname without "." {
+@calcom/web:dev:   hostname: [32m'localhost:3000'[39m
+@calcom/web:dev: }
+@calcom/web:dev:  GET /api/logo 200 in 1337ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 829ms
+@calcom/web:dev:  GET /api/auth/csrf 200 in 397ms
+@calcom/web:dev:  GET /favicon.ico 200 in 1296ms
+@calcom/web:dev:  POST /api/auth/signout 200 in 581ms
+@calcom/web:dev:  GET /api/auth/csrf 304 in 649ms
+@calcom/web:dev: 12[0m[0m:33[0m[0m:28[0m[0m:012[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  POST /api/auth/callback/credentials 200 in 1369ms
+@calcom/web:dev:  GET /api/auth/session 200 in 937ms
+@calcom/web:dev:  POST /api/auth/signout 200 in 282ms
+@calcom/web:dev:  ⚠ ./node_modules/sanitize-html
+@calcom/web:dev: Package postcss can't be external
+@calcom/web:dev: The request postcss matches serverExternalPackages (or the default list).
+@calcom/web:dev: The package resolves to a different version when requested from the project directory (8.4.18) compared to the package requested from the importing module (8.4.21).
+@calcom/web:dev: Make sure to install the same version of the package in both locations.
+@calcom/web:dev: 
+@calcom/web:dev: 
+@calcom/web:dev:  GET /api/auth/session 200 in 805ms
+@calcom/web:dev:  ⨯ [Error [TRPCClientError]: UNAUTHORIZED] {
+@calcom/web:dev:   meta: [Object],
+@calcom/web:dev:   shape: [Object],
+@calcom/web:dev:   data: [Object],
+@calcom/web:dev:   digest: '196318357'
+@calcom/web:dev: }
+@calcom/web:dev:  GET /settings/my-account/profile 200 in 2662ms
+@calcom/web:dev:  POST /api/auth/_log 200 in 1019ms
+@calcom/web:dev:  POST /api/auth/_log 200 in 1695ms
+@calcom/web:dev:  GET /api/auth/session 200 in 1921ms
+@calcom/web:dev: 12[0m[0m:33[0m[0m:37[0m[0m:369[0m[0m [WARN[0m[0m] RateLimit Disabled because the UNKEY_ROOT_KEY environment variable was not found.
+@calcom/web:dev:  GET /api/trpc/teams/list?batch=1&input=%7B%220%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 3007ms
+@calcom/web:dev:  GET /favicon.ico 200 in 3776ms
+@calcom/web:dev:  GET /api/trpc/me/get,getUserTopBanners,get?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22includePasswordAdded%22%3Atrue%7D%7D%2C%221%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%2C%222%22%3A%7B%22json%22%3Anull%2C%22meta%22%3A%7B%22values%22%3A%5B%22undefined%22%5D%7D%7D%7D 200 in 3165ms
+@calcom/web:dev: [PERF]: getEventTypesFromGroup(6) took 241.83454199880362ms
+@calcom/web:dev:  GET /api/trpc/eventTypes/getEventTypesFromGroup?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22limit%22%3A10%2C%22group%22%3A%7B%22teamId%22%3Anull%2C%22parentId%22%3Anull%7D%7D%7D%7D 200 in 3254ms
+@calcom/web:dev:  GET /parent/swimmer/00000000-0000-0000-0000-e2e-swimmer 200 in 3943ms
+@calcom/web:dev:  GET /api/trpc/swim/attendance.listBySwimmer,progressNotes.listMineBySwimmer?batch=1&input=%7B%220%22%3A%7B%22json%22%3A%7B%22swimmerId%22%3A%2200000000-0000-0000-0000-e2e-swimmer%22%7D%7D%2C%221%22%3A%7B%22json%22%3A%7B%22swimmerId%22%3A%2200000000-0000-0000-0000-e2e-swimmer%22%7D%7D%7D 400 in 1188ms
+@calcom/web:dev:  GET /api/auth/session 200 in 1263ms
+@calcom/web:dev:  GET /favicon.ico 200 in 2108ms
+@calcom/web:dev: [?25h
+
+ Tasks:    3 successful, 3 total
+Cached:    0 cached, 3 total
+  Time:    210h41m32.156s 
+

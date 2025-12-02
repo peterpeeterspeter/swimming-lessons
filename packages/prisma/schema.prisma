@@ -1,3 +1,112 @@
+
+// ===== Swim School Models =====
+
+enum EnrollmentStatus {
+  ACTIVE
+  WITHDRAWN
+  COMPLETED
+  WAITLISTED
+}
+
+enum AttendanceStatus {
+  PRESENT
+  ABSENT
+  EXCUSED
+  LATE
+}
+
+model Swimmer {
+  id           String   @id @default(uuid())
+  // Parent user (account holder)
+  parentId     Int
+  parent       User     @relation(fields: [parentId], references: [id], onDelete: Cascade)
+  // Organization/School
+  teamId       Int
+  team         Team     @relation(fields: [teamId], references: [id], onDelete: Cascade)
+
+  firstName    String
+  lastName     String
+  birthDate    DateTime?
+  currentLevel String?
+  medicalNotes String?
+  emergencyContacts Json?
+
+  enrollments  Enrollment[]
+  attendance   AttendanceRecord[]
+  progress     ProgressNote[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([parentId])
+  @@index([teamId])
+}
+
+model Enrollment {
+  id          String           @id @default(uuid())
+  swimmerId   String
+  swimmer     Swimmer          @relation(fields: [swimmerId], references: [id], onDelete: Cascade)
+  eventTypeId Int
+  eventType   EventType        @relation(fields: [eventTypeId], references: [id], onDelete: Cascade)
+  status      EnrollmentStatus @default(ACTIVE)
+  startDate   DateTime?        @default(now())
+  endDate     DateTime?
+
+  // Optional link to a booking (e.g., seat instance in a recurring series)
+  bookingId   Int?
+  booking     Booking?         @relation(fields: [bookingId], references: [id], onDelete: SetNull)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([swimmerId, eventTypeId])
+  @@index([eventTypeId])
+  @@index([bookingId])
+}
+
+model AttendanceRecord {
+  id         String           @id @default(uuid())
+  swimmerId  String
+  swimmer    Swimmer          @relation(fields: [swimmerId], references: [id], onDelete: Cascade)
+  bookingId  Int
+  booking    Booking          @relation(fields: [bookingId], references: [id], onDelete: Cascade)
+  status     AttendanceStatus @default(PRESENT)
+
+  markedById Int?
+  markedBy   User?            @relation("MarkedBy", fields: [markedById], references: [id], onDelete: SetNull)
+  markedAt   DateTime?        @default(now())
+
+  notes      String?
+  metadata   Json?
+
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@unique([swimmerId, bookingId])
+  @@index([bookingId])
+  @@index([markedById])
+}
+
+model ProgressNote {
+  id            String    @id @default(uuid())
+  swimmerId     String
+  swimmer       Swimmer   @relation(fields: [swimmerId], references: [id], onDelete: Cascade)
+  bookingId     Int
+  booking       Booking   @relation(fields: [bookingId], references: [id], onDelete: Cascade)
+  instructorId  Int?
+  instructor    User?     @relation("Instructor", fields: [instructorId], references: [id], onDelete: SetNull)
+
+  note          String?
+  skills        Json?
+  visibleToParent Boolean @default(true)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([bookingId])
+  @@index([instructorId])
+}
+
 // This is your Prisma Schema file
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
@@ -259,6 +368,9 @@ model EventType {
   createdAt DateTime? @default(now())
   updatedAt DateTime? @updatedAt
 
+  // Swim School relations
+  enrollments Enrollment[]
+
   // @@partial_index([instantMeetingScheduleId])
 
   @@unique([userId, slug])
@@ -478,6 +590,10 @@ model User {
   whitelistWorkflows             Boolean                       @default(false)
   calAiPhoneNumbers              CalAiPhoneNumber[]
   agents                         Agent[]
+  // Swim School relations
+  swimmers                       Swimmer[]
+  markedAttendance               AttendanceRecord[]            @relation("MarkedBy")
+  writtenProgressNotes           ProgressNote[]                @relation("Instructor")
 
   @@unique([email])
   @@unique([email, username])
@@ -609,6 +725,9 @@ model Team {
 
   teamBilling         TeamBilling?         @relation("TeamBilling")
   organizationBilling OrganizationBilling? @relation("OrganizationBilling")
+
+  // Swim School relations
+  swimmers            Swimmer[]
 
   @@unique([slug, parentId])
   @@index([parentId])
@@ -870,6 +989,10 @@ model Booking {
   routingFormResponses         RoutingFormResponseDenormalized[]
   expenseLogs                  CreditExpenseLog[]
   report                       BookingReport?
+  // Swim School relations
+  attendanceRecords            AttendanceRecord[]
+  progressNotes                ProgressNote[]
+  enrollments                  Enrollment[]
 
   // @@partial_index([reassignById])
 

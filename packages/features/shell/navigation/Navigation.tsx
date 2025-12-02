@@ -24,7 +24,7 @@ const preserveBookingsQueryParams = ({
   nextPathname: string;
 }) => Boolean(prevPathname?.startsWith("/bookings/")) && nextPathname.startsWith("/bookings/");
 
-const getNavigationItems = (orgBranding: OrganizationBranding): NavigationItemType[] => [
+export const getNavigationItems = (orgBranding: OrganizationBranding): NavigationItemType[] => [
   {
     name: "event_types_page_title",
     href: "/event-types",
@@ -73,6 +73,11 @@ const getNavigationItems = (orgBranding: OrganizationBranding): NavigationItemTy
     name: "availability",
     href: "/availability",
     icon: "clock",
+  },
+  {
+    name: "swim_nav",
+    href: "/swim",
+    icon: "grid-3x3",
   },
   ...(orgBranding
     ? [

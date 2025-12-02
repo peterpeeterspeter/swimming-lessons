@@ -1,4 +1,23 @@
 {
+  "loading": "Loading…",
+  "swim_nav": "Swim",
+  "swim": {
+    "title": "Swim",
+    "instructor": "Instructor",
+    "manager": "Manager",
+    "parent": "Parent",
+    "todaysLessons": "Today's Lessons",
+    "todaysAttendance": "Today's Attendance",
+    "mySwimmers": "My Swimmers",
+    "noLessonsToday": "No lessons today.",
+    "noSwimmersFound": "No swimmers found.",
+    "attendance": "Attendance",
+    "progressNotes": "Progress Notes",
+    "noAttendanceYet": "No attendance yet.",
+    "noProgressNotesYet": "No progress notes yet.",
+    "swimmer": "Swimmer",
+    "presentCount": "{{present}}/{{total}} present"
+  },
   "identity_provider": "Identity provider",
   "trial_days_left": "You have $t(day, {\"count\": {{days}} }) left on your PRO trial",
   "day_one": "{{count}} day",
