@@ -1,5 +1,6 @@
-import "dotenv/config";
 import dayjs from "dayjs";
+import "dotenv/config";
+
 import prisma from "@calcom/prisma";
 import { MembershipRole } from "@calcom/prisma/enums";
 
@@ -57,25 +58,17 @@ async function main() {
 
   const swimmers = [] as { id: string }[];
   for (const s of swimmersData) {
-    const swimmer = await prisma.swimmer.upsert({
-      where: {
-        // Upsert by synthetic unique: parent/team/name combo via findFirst then create if not exists
-        // Prisma doesn't support composite unique here; emulate with find
-        id: "00000000-0000-0000-0000-" + (parent.id + team.id + s.firstName.charCodeAt(0)).toString().padStart(12, "0"),
-      },
-      update: {},
-      create: {
-        parentId: parent.id,
-        teamId: team.id,
-        firstName: s.firstName,
-        lastName: s.lastName,
-        birthDate: s.birthDate,
-        currentLevel: "Beginner",
-      },
-    }).catch(async () => {
-      // Fallback: create normally if the synthesized id conflicts
-      return prisma.swimmer.create({
-        data: {
+    const swimmer = await prisma.swimmer
+      .upsert({
+        where: {
+          // Upsert by synthetic unique: parent/team/name combo via findFirst then create if not exists
+          // Prisma doesn't support composite unique here; emulate with find
+          id:
+            "00000000-0000-0000-0000-" +
+            (parent.id + team.id + s.firstName.charCodeAt(0)).toString().padStart(12, "0"),
+        },
+        update: {},
+        create: {
           parentId: parent.id,
           teamId: team.id,
           firstName: s.firstName,
@@ -83,21 +76,40 @@ async function main() {
           birthDate: s.birthDate,
           currentLevel: "Beginner",
         },
-        select: { id: true },
+      })
+      .catch(async () => {
+        // Fallback: create normally if the synthesized id conflicts
+        return prisma.swimmer.create({
+          data: {
+            parentId: parent.id,
+            teamId: team.id,
+            firstName: s.firstName,
+            lastName: s.lastName,
+            birthDate: s.birthDate,
+            currentLevel: "Beginner",
+            medicalNotes: "None",
+            emergencyContacts: { name: "Mom", phone: "555-0199", relationship: "Mother" },
+          },
+          select: { id: true },
+        });
       });
-    });
     // Ensure we only push id
-    const ensured = await prisma.swimmer.findFirst({ where: { parentId: parent.id, teamId: team.id, firstName: s.firstName, lastName: s.lastName }, select: { id: true } });
+    const ensured = await prisma.swimmer.findFirst({
+      where: { parentId: parent.id, teamId: team.id, firstName: s.firstName, lastName: s.lastName },
+      select: { id: true },
+    });
     if (ensured) swimmers.push(ensured);
   }
 
   // Enroll swimmers into the team event type
   for (const sw of swimmers) {
-    await prisma.enrollment.upsert({
-      where: { swimmerId_eventTypeId: { swimmerId: sw.id, eventTypeId: eventType.id } },
-      update: { status: "ACTIVE" },
-      create: { swimmerId: sw.id, eventTypeId: eventType.id, status: "ACTIVE" },
-    }).catch(() => undefined);
+    await prisma.enrollment
+      .upsert({
+        where: { swimmerId_eventTypeId: { swimmerId: sw.id, eventTypeId: eventType.id } },
+        update: { status: "ACTIVE" },
+        create: { swimmerId: sw.id, eventTypeId: eventType.id, status: "ACTIVE" },
+      })
+      .catch(() => undefined);
   }
 
   // Create a booking for today (anchor at local midday) so instructors can mark attendance reliably across timezones

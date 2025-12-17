@@ -14,25 +14,31 @@ const upsertSchema = z.object({
 });
 
 const attendanceRouter = router({
-  listByBooking: authedProcedure.input(z.object({ bookingId: z.number().int() })).query(async ({ ctx, input }) => {
-    // Require membership on team that owns the booking's eventType
-    const booking = await ctx.prisma.booking.findUnique({
-      where: { id: input.bookingId },
-      select: { eventType: { select: { teamId: true } } },
-    });
-    const teamId = booking?.eventType?.teamId ?? null;
-    if (!teamId) return [];
-    const isMember = await ctx.prisma.membership.findFirst({ where: { teamId, userId: ctx.user?.id } });
-    if (!isMember) return [];
-    return ctx.prisma.attendanceRecord.findMany({ where: { bookingId: input.bookingId } });
-  }),
+  listByBooking: authedProcedure
+    .input(z.object({ bookingId: z.number().int() }))
+    .query(async ({ ctx, input }) => {
+      // Require membership on team that owns the booking's eventType
+      const booking = await ctx.prisma.booking.findUnique({
+        where: { id: input.bookingId },
+        select: { eventType: { select: { teamId: true } } },
+      });
+      const teamId = booking?.eventType?.teamId ?? null;
+      if (!teamId) return [];
+      const isMember = await ctx.prisma.membership.findFirst({ where: { teamId, userId: ctx.user?.id } });
+      if (!isMember) return [];
+      return ctx.prisma.attendanceRecord.findMany({ where: { bookingId: input.bookingId } });
+    }),
 
-  listBySwimmer: authedProcedure.input(z.object({ swimmerId: z.string().uuid() })).query(async ({ ctx, input }) => {
-    // Parent can view their swimmer's attendance
-    const swimmer = await ctx.prisma.swimmer.findFirst({ where: { id: input.swimmerId, parentId: ctx.user?.id } });
-    if (!swimmer) return [];
-    return ctx.prisma.attendanceRecord.findMany({ where: { swimmerId: input.swimmerId } });
-  }),
+  listBySwimmer: authedProcedure
+    .input(z.object({ swimmerId: z.string().uuid() }))
+    .query(async ({ ctx, input }) => {
+      // Parent can view their swimmer's attendance
+      const swimmer = await ctx.prisma.swimmer.findFirst({
+        where: { id: input.swimmerId, parentId: ctx.user?.id },
+      });
+      if (!swimmer) return [];
+      return ctx.prisma.attendanceRecord.findMany({ where: { swimmerId: input.swimmerId } });
+    }),
 
   mark: authedProcedure.input(upsertSchema).mutation(async ({ ctx, input }) => {
     // Must be member of team owning the booking's event type
@@ -65,20 +71,62 @@ const attendanceRouter = router({
     });
   }),
 
-  delete: authedProcedure.input(z.object({ swimmerId: z.string().uuid(), bookingId: z.number().int() })).mutation(async ({ ctx, input }) => {
-    // Only team member can delete
-    const booking = await ctx.prisma.booking.findUnique({
-      where: { id: input.bookingId },
-      select: { eventType: { select: { teamId: true } } },
-    });
-    const teamId = booking?.eventType?.teamId ?? null;
-    if (!teamId) throw new Error("Unauthorized");
-    const isMember = await ctx.prisma.membership.findFirst({ where: { teamId, userId: ctx.user?.id } });
-    if (!isMember) throw new Error("Unauthorized");
+  delete: authedProcedure
+    .input(z.object({ swimmerId: z.string().uuid(), bookingId: z.number().int() }))
+    .mutation(async ({ ctx, input }) => {
+      // Only team member can delete
+      const booking = await ctx.prisma.booking.findUnique({
+        where: { id: input.bookingId },
+        select: { eventType: { select: { teamId: true } } },
+      });
+      const teamId = booking?.eventType?.teamId ?? null;
+      if (!teamId) throw new Error("Unauthorized");
+      const isMember = await ctx.prisma.membership.findFirst({ where: { teamId, userId: ctx.user?.id } });
+      if (!isMember) throw new Error("Unauthorized");
 
-    await ctx.prisma.attendanceRecord.delete({ where: { swimmerId_bookingId: { swimmerId: input.swimmerId, bookingId: input.bookingId } } });
-    return { ok: true };
-  }),
+      await ctx.prisma.attendanceRecord.delete({
+        where: { swimmerId_bookingId: { swimmerId: input.swimmerId, bookingId: input.bookingId } },
+      });
+      return { ok: true };
+    }),
+
+  /**
+   * Report absence (Parent pre-reports that swimmer won't attend)
+   */
+  reportAbsence: authedProcedure
+    .input(
+      z.object({
+        swimmerId: z.string().uuid(),
+        bookingId: z.number().int(),
+        reason: z.enum(["SICK", "VACATION", "OTHER"]),
+        notes: z.string().optional(),
+      })
+    )
+    .mutation(async ({ ctx, input }) => {
+      // Verify swimmer belongs to user
+      const swimmer = await ctx.prisma.swimmer.findFirst({
+        where: { id: input.swimmerId, parentId: ctx.user?.id },
+      });
+      if (!swimmer) throw new Error("Unauthorized");
+
+      // Create pre-marked attendance as EXCUSED
+      return ctx.prisma.attendanceRecord.upsert({
+        where: { swimmerId_bookingId: { swimmerId: input.swimmerId, bookingId: input.bookingId } },
+        update: {
+          status: "EXCUSED",
+          notes: `Parent reported: ${input.reason}${input.notes ? ` - ${input.notes}` : ""}`,
+          markedById: ctx.user?.id,
+          markedAt: new Date(),
+        },
+        create: {
+          swimmerId: input.swimmerId,
+          bookingId: input.bookingId,
+          status: "EXCUSED",
+          notes: `Parent reported: ${input.reason}${input.notes ? ` - ${input.notes}` : ""}`,
+          markedById: ctx.user?.id,
+        },
+      });
+    }),
 });
 
 export default attendanceRouter;

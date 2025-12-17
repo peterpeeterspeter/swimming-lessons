@@ -1,4 +1,3 @@
-
 // ===== Swim School Models =====
 
 enum EnrollmentStatus {
@@ -15,25 +14,44 @@ enum AttendanceStatus {
   LATE
 }
 
-model Swimmer {
-  id           String   @id @default(uuid())
-  // Parent user (account holder)
-  parentId     Int
-  parent       User     @relation(fields: [parentId], references: [id], onDelete: Cascade)
-  // Organization/School
-  teamId       Int
-  team         Team     @relation(fields: [teamId], references: [id], onDelete: Cascade)
+enum PaymentStatus {
+  PENDING
+  ACTIVE
+  PAST_DUE
+  CANCELED
+  FAILED
+}
 
-  firstName    String
-  lastName     String
-  birthDate    DateTime?
-  currentLevel String?
-  medicalNotes String?
+enum PaymentFrequency {
+  MONTHLY
+  QUARTERLY
+  SESSION
+  ANNUAL
+}
+
+model Swimmer {
+  id       String @id @default(uuid())
+  // Parent/Guardian
+  parentId Int
+  parent   User   @relation("ParentToSwimmer", fields: [parentId], references: [id], onDelete: Cascade)
+  // Organization/School
+  teamId   Int
+  team     Team   @relation(fields: [teamId], references: [id], onDelete: Cascade)
+
+  firstName         String
+  lastName          String
+  birthDate         DateTime?
+  currentLevel      String?
+  medicalNotes      String?
   emergencyContacts Json?
 
-  enrollments  Enrollment[]
-  attendance   AttendanceRecord[]
-  progress     ProgressNote[]
+  enrollments   Enrollment[]
+  attendance    AttendanceRecord[]
+  progress      ProgressNote[]
+  messages      SwimMessage[]
+  makeupLessons MakeupLesson[]
+  achievements  SkillAchievement[]
+  certificates  Certificate[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -53,8 +71,23 @@ model Enrollment {
   endDate     DateTime?
 
   // Optional link to a booking (e.g., seat instance in a recurring series)
-  bookingId   Int?
-  booking     Booking?         @relation(fields: [bookingId], references: [id], onDelete: SetNull)
+  bookingId Int?
+  booking   Booking? @relation(fields: [bookingId], references: [id], onDelete: SetNull)
+
+  // Payment fields
+  paymentStatus        PaymentStatus?    @default(PENDING)
+  paymentFrequency     PaymentFrequency?
+  nextPaymentDate      DateTime?
+  stripeSubscriptionId String?
+  stripePriceId        String?
+  amount               Decimal?          @db.Decimal(10, 2)
+
+  // Waitlist fields
+  waitlistPosition Int?
+  waitlistJoinedAt DateTime?
+
+  // Make-up lesson credits
+  makeupCredits Int @default(0)
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -62,49 +95,203 @@ model Enrollment {
   @@unique([swimmerId, eventTypeId])
   @@index([eventTypeId])
   @@index([bookingId])
+  @@index([stripeSubscriptionId])
+  @@index([nextPaymentDate])
 }
 
 model AttendanceRecord {
-  id         String           @id @default(uuid())
-  swimmerId  String
-  swimmer    Swimmer          @relation(fields: [swimmerId], references: [id], onDelete: Cascade)
-  bookingId  Int
-  booking    Booking          @relation(fields: [bookingId], references: [id], onDelete: Cascade)
-  status     AttendanceStatus @default(PRESENT)
+  id        String           @id @default(uuid())
+  swimmerId String
+  swimmer   Swimmer          @relation(fields: [swimmerId], references: [id], onDelete: Cascade)
+  bookingId Int
+  booking   Booking          @relation(fields: [bookingId], references: [id], onDelete: Cascade)
+  status    AttendanceStatus @default(PRESENT)
 
   markedById Int?
-  markedBy   User?            @relation("MarkedBy", fields: [markedById], references: [id], onDelete: SetNull)
-  markedAt   DateTime?        @default(now())
+  markedBy   User?     @relation("MarkedBy", fields: [markedById], references: [id], onDelete: SetNull)
+  markedAt   DateTime? @default(now())
 
-  notes      String?
-  metadata   Json?
+  notes    String?
+  metadata Json?
 
-  createdAt  DateTime @default(now())
-  updatedAt  DateTime @updatedAt
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
   @@unique([swimmerId, bookingId])
+  @@index([swimmerId])
   @@index([bookingId])
   @@index([markedById])
 }
 
 model ProgressNote {
-  id            String    @id @default(uuid())
-  swimmerId     String
-  swimmer       Swimmer   @relation(fields: [swimmerId], references: [id], onDelete: Cascade)
-  bookingId     Int
-  booking       Booking   @relation(fields: [bookingId], references: [id], onDelete: Cascade)
-  instructorId  Int?
-  instructor    User?     @relation("Instructor", fields: [instructorId], references: [id], onDelete: SetNull)
+  id           String  @id @default(uuid())
+  swimmerId    String
+  swimmer      Swimmer @relation(fields: [swimmerId], references: [id], onDelete: Cascade)
+  bookingId    Int
+  booking      Booking @relation(fields: [bookingId], references: [id], onDelete: Cascade)
+  instructorId Int
+  instructor   User    @relation("Instructor", fields: [instructorId], references: [id], onDelete: Cascade)
 
-  note          String?
-  skills        Json?
+  note            String? @db.Text
+  skills          Json?
   visibleToParent Boolean @default(true)
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  @@index([bookingId])
+  @@index([swimmerId])
   @@index([instructorId])
+  @@index([bookingId])
+}
+
+model SwimMessage {
+  id String @id @default(uuid())
+
+  // Sender
+  senderId Int
+  sender   User @relation("MessageSender", fields: [senderId], references: [id], onDelete: Cascade)
+
+  // Recipient
+  recipientId Int
+  recipient   User @relation("MessageRecipient", fields: [recipientId], references: [id], onDelete: Cascade)
+
+  // Optional: Link to specific swimmer/enrollment for context
+  swimmerId String?
+  swimmer   Swimmer? @relation(fields: [swimmerId], references: [id], onDelete: SetNull)
+
+  // Message content
+  subject String?
+  body    String  @db.Text
+
+  // Status
+  read   Boolean   @default(false)
+  readAt DateTime?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([senderId])
+  @@index([recipientId])
+  @@index([swimmerId])
+  @@index([read])
+  @@index([createdAt])
+}
+
+model MakeupLesson {
+  id String @id @default(uuid())
+
+  // Original missed lesson
+  originalBookingId Int
+  originalBooking   Booking @relation("OriginalLesson", fields: [originalBookingId], references: [id], onDelete: Cascade)
+
+  // Make-up lesson (when scheduled)
+  makeupBookingId Int?
+  makeupBooking   Booking? @relation("MakeupLesson", fields: [makeupBookingId], references: [id], onDelete: SetNull)
+
+  // Swimmer
+  swimmerId String
+  swimmer   Swimmer @relation(fields: [swimmerId], references: [id], onDelete: Cascade)
+
+  // Status and tracking
+  status    MakeupStatus @default(PENDING)
+  reason    String?
+  expiresAt DateTime? // E.g., 90 days from missed lesson
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([swimmerId])
+  @@index([status])
+  @@index([originalBookingId])
+  @@index([makeupBookingId])
+  @@index([expiresAt])
+}
+
+enum MakeupStatus {
+  PENDING // Credit issued, not yet booked
+  SCHEDULED // Booked into a future lesson
+  USED // Attended make-up lesson
+  EXPIRED // Credit expired unused
+}
+
+model SkillLevel {
+  id     String @id @default(uuid())
+  teamId Int
+  team   Team   @relation(fields: [teamId], references: [id], onDelete: Cascade)
+
+  name        String // e.g., "Beginner 1", "Advanced Freestyle"
+  description String?
+  order       Int     @default(0) // Display order in tree
+  color       String? // Hex color for UI
+
+  // Tree structure
+  parentId String?
+  parent   SkillLevel?  @relation("SkillHierarchy", fields: [parentId], references: [id], onDelete: SetNull)
+  children SkillLevel[] @relation("SkillHierarchy")
+
+  // Skills in this level
+  skills Json // Array of skill names required for this level
+
+  // Certificate template
+  certificateTemplate String? // HTML/template for certificate
+
+  achievements SkillAchievement[]
+  certificates Certificate[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([teamId])
+  @@index([parentId])
+  @@index([order])
+}
+
+model SkillAchievement {
+  id String @id @default(uuid())
+
+  swimmerId String
+  swimmer   Swimmer @relation(fields: [swimmerId], references: [id], onDelete: Cascade)
+
+  skillLevelId String
+  skillLevel   SkillLevel @relation(fields: [skillLevelId], references: [id], onDelete: Cascade)
+
+  skillName  String // Specific skill achieved within the level
+  achievedAt DateTime @default(now())
+
+  // Who marked it (instructor)
+  markedById Int?
+  markedBy   User? @relation(fields: [markedById], references: [id], onDelete: SetNull)
+
+  notes String?
+
+  @@unique([swimmerId, skillLevelId, skillName])
+  @@index([swimmerId])
+  @@index([skillLevelId])
+  @@index([achievedAt])
+}
+
+model Certificate {
+  id String @id @default(uuid())
+
+  swimmerId String
+  swimmer   Swimmer @relation(fields: [swimmerId], references: [id], onDelete: Cascade)
+
+  skillLevelId String
+  skillLevel   SkillLevel @relation(fields: [skillLevelId], references: [id], onDelete: Cascade)
+
+  // Certificate details
+  certificateNumber String   @unique
+  issuedAt          DateTime @default(now())
+  pdfUrl            String? // S3 or file path to generated PDF
+
+  // Merge field data (JSON to populate certificate template)
+  data Json
+
+  createdAt DateTime @default(now())
+
+  @@index([swimmerId])
+  @@index([skillLevelId])
+  @@index([issuedAt])
 }
 
 // This is your Prisma Schema file
@@ -591,9 +778,12 @@ model User {
   calAiPhoneNumbers              CalAiPhoneNumber[]
   agents                         Agent[]
   // Swim School relations
-  swimmers                       Swimmer[]
+  swimmers                       Swimmer[]                     @relation("ParentToSwimmer")
   markedAttendance               AttendanceRecord[]            @relation("MarkedBy")
-  writtenProgressNotes           ProgressNote[]                @relation("Instructor")
+  instructorProgressNotes        ProgressNote[]                @relation("Instructor")
+  sentMessages                   SwimMessage[]                 @relation("MessageSender")
+  receivedMessages               SwimMessage[]                 @relation("MessageRecipient")
+  markedAchievements             SkillAchievement[]
 
   @@unique([email])
   @@unique([email, username])
@@ -727,7 +917,8 @@ model Team {
   organizationBilling OrganizationBilling? @relation("OrganizationBilling")
 
   // Swim School relations
-  swimmers            Swimmer[]
+  swimmers    Swimmer[]
+  skillLevels SkillLevel[]
 
   @@unique([slug, parentId])
   @@index([parentId])
@@ -993,6 +1184,8 @@ model Booking {
   attendanceRecords            AttendanceRecord[]
   progressNotes                ProgressNote[]
   enrollments                  Enrollment[]
+  originalMakeupLessons        MakeupLesson[]                    @relation("OriginalLesson")
+  makeupLessons                MakeupLesson[]                    @relation("MakeupLesson")
 
   // @@partial_index([reassignById])
 
