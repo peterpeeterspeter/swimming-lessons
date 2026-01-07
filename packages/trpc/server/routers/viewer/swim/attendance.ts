@@ -26,7 +26,10 @@ const attendanceRouter = router({
       if (!teamId) return [];
       const isMember = await ctx.prisma.membership.findFirst({ where: { teamId, userId: ctx.user?.id } });
       if (!isMember) return [];
-      return ctx.prisma.attendanceRecord.findMany({ where: { bookingId: input.bookingId } });
+      return ctx.prisma.attendanceRecord.findMany({ 
+        where: { bookingId: input.bookingId },
+        include: { swimmer: true },
+      });
     }),
 
   listBySwimmer: authedProcedure
@@ -56,6 +59,7 @@ const attendanceRouter = router({
       update: {
         status: input.status,
         notes: input.notes,
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         metadata: (input.metadata as any) ?? undefined,
         markedById: ctx.user?.id,
         markedAt: new Date(),
@@ -65,6 +69,7 @@ const attendanceRouter = router({
         bookingId: input.bookingId,
         status: input.status,
         notes: input.notes,
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         metadata: (input.metadata as any) ?? undefined,
         markedById: ctx.user?.id,
       },
