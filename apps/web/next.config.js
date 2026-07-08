@@ -260,7 +260,12 @@ const nextConfig = (phase) => {
           })
         );
 
-        config.plugins = [...config.plugins, new PrismaPlugin()];
+        if (dev) {
+          // In dev, PrismaPg adapter doesn't need the engine binary copy
+          // which fails due to dynamic route path resolution
+        } else {
+          config.plugins = [...config.plugins, new PrismaPlugin()];
+        }
 
         config.externals.push("formidable");
       }

@@ -3088,3 +3088,8 @@ model CalendarCacheEvent {
   @@index([start, end, status])
   @@index([selectedCalendarId, iCalUID])
 }
+
+generator legacy_client {
+  provider = "prisma-client-js"
+  output   = "../../node_modules/.prisma/client"
+}
