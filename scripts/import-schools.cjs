@@ -11,8 +11,12 @@ const CSV_PATH =
   process.argv[2] ||
   "/home/hermes/.hermes/cache/documents/doc_3d1183222d18_final_swim_schools_complete (2).csv";
 const BATCH_SIZE = 50;
-const DATABASE_URL =
-  "postgresql://neondb_owner:npg_4QSgpLc0WtfO@ep-dawn-frog-aslv51be-pooler.c-4.eu-central-1.aws.neon.tech/swim_school?sslmode=require";
+const DATABASE_URL = process.env.DATABASE_URL;
+
+if (!DATABASE_URL) {
+  console.error("Error: DATABASE_URL environment variable is required");
+  process.exit(1);
+}
 
 function slugify(name, city) {
   const base = (name || "")
