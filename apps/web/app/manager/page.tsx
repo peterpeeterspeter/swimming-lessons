@@ -48,7 +48,12 @@ export default function ManagerTodaySummaryPage() {
       </h1>
 
       {/* Quick Actions */}
-      <div className="mb-4 flex gap-3">
+      <div className="mb-4 flex flex-wrap gap-3">
+        <Link
+          href="/manager/leads"
+          className="rounded bg-cyan-600 px-4 py-2 text-sm font-medium text-white hover:bg-cyan-700">
+          📩 Leads ({""})
+        </Link>
         <Link
           href="/manager/waitlist"
           className="rounded bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700">

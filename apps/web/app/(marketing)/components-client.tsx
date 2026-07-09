@@ -48,6 +48,7 @@ export function Reveal({
 /*  Site navigation                                                    */
 /* ------------------------------------------------------------------ */
 const NAV_LINKS = [
+  { href: "/swim-lessons", label: "Find a school" },
   { href: "/#how-it-works", label: "How it works" },
   { href: "/features", label: "Features" },
   { href: "/pricing", label: "Pricing" },

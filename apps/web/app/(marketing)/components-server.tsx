@@ -183,6 +183,7 @@ export function SiteFooter() {
           <FooterCol
             title="Product"
             links={[
+              { label: "Find a school", href: "/swim-lessons" },
               { label: "Features", href: "/features" },
               { label: "Pricing", href: "/pricing" },
               { label: "Start free", href: "/signup" },

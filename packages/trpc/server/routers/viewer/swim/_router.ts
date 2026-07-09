@@ -1,10 +1,12 @@
 import { router } from "../../../trpc";
 import attendanceRouter from "./attendance";
+import directoryRouter from "./directory";
 import enrollmentPaymentsRouter from "./enrollment-payments";
 import enrollmentsRouter from "./enrollments";
 import financialRouter from "./financial";
 import instructorRouter from "./instructor";
 import kioskRouter from "./kiosk";
+import leadsRouter from "./directory";
 import makeupRouter from "./makeup";
 import managerRouter from "./manager";
 import messagingRouter from "./messaging";
@@ -29,6 +31,8 @@ export const swimRouter = router({
   kiosk: kioskRouter,
   makeup: makeupRouter,
   skills: skillsRouter,
+  directory: directoryRouter,
+  leads: leadsRouter,
 });
 
 export default swimRouter;

@@ -917,8 +917,10 @@ model Team {
   organizationBilling OrganizationBilling? @relation("OrganizationBilling")
 
   // Swim School relations
-  swimmers    Swimmer[]
-  skillLevels SkillLevel[]
+  swimmers         Swimmer[]
+  skillLevels      SkillLevel[]
+  directoryListing DirectoryListing?
+  leads            Lead[]
 
   @@unique([slug, parentId])
   @@index([parentId])
@@ -3087,6 +3089,84 @@ model CalendarCacheEvent {
   @@unique([selectedCalendarId, externalId])
   @@index([start, end, status])
   @@index([selectedCalendarId, iCalUID])
+}
+
+/// Swim school directory listing (public, no auth required to view)
+model DirectoryListing {
+  id        String @id @default(uuid())
+  team      Team   @relation(fields: [teamId], references: [id], onDelete: Cascade)
+  teamId    Int    @unique
+
+  slug        String @unique
+  name        String
+  tagline     String?
+  description String?
+  city        String?
+  state       String?
+  address     String?
+  postalCode  String?
+  phone       String?
+  email       String?
+  website     String?
+  logoUrl     String?
+  coverPhotoUrl String?
+
+  galleryUrls    Json?
+  levelsOffered  Json?
+  facilities     Json?
+  trialLessonUrl String?
+
+  isPublished Boolean @default(false)
+  isFeatured  Boolean @default(false)
+
+  leads Lead[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([city])
+  @@index([isPublished])
+}
+
+/// Parent inquiry from the directory (lead gen)
+model Lead {
+  id     String @id @default(uuid())
+  team   Team   @relation(fields: [teamId], references: [id], onDelete: Cascade)
+  teamId Int
+
+  listing        DirectoryListing? @relation(fields: [listingId], references: [id], onDelete: SetNull)
+  listingId      String?
+
+  parentName  String
+  parentEmail String
+  parentPhone String?
+
+  childName  String?
+  childAge   Int?
+  childLevel String?
+
+  message        String?
+  preferredTimes Json?
+
+  status    LeadStatus @default(NEW)
+  bookingId Int?
+
+  source String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([teamId])
+  @@index([status])
+  @@index([listingId])
+}
+
+enum LeadStatus {
+  NEW
+  CONTACTED
+  TRIAL_BOOKED
+  ENROLLED
+  LOST
 }
 
 generator legacy_client {
