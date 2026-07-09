@@ -11,7 +11,7 @@ import { emailSchema } from "@calcom/lib/emailSchema";
 import slugify from "@calcom/lib/slugify";
 import { teamMetadataSchema } from "@calcom/prisma/zod-utils";
 
-import { IS_GOOGLE_LOGIN_ENABLED } from "@server/lib/constants";
+import { IS_FACEBOOK_LOGIN_ENABLED, IS_GITHUB_LOGIN_ENABLED, IS_GOOGLE_LOGIN_ENABLED } from "@server/lib/constants";
 
 const checkValidEmail = (email: string) => emailSchema.safeParse(email).success;
 
@@ -60,6 +60,8 @@ export const getServerSideProps = async (ctx: GetServerSidePropsContext) => {
   const props = {
     redirectUrl,
     isGoogleLoginEnabled: IS_GOOGLE_LOGIN_ENABLED,
+    isGitHubLoginEnabled: IS_GITHUB_LOGIN_ENABLED,
+    isFacebookLoginEnabled: IS_FACEBOOK_LOGIN_ENABLED,
     isSAMLLoginEnabled,
     prepopulateFormValues: undefined,
     emailVerificationEnabled,
