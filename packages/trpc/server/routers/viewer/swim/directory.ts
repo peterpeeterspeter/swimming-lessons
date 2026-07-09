@@ -1,8 +1,8 @@
 import { z } from "zod";
 
-import publicProcedure from "../../procedures/publicProcedure";
-import authedProcedure from "../../procedures/authedProcedure";
-import { router } from "../../trpc";
+import publicProcedure from "../../../procedures/publicProcedure";
+import authedProcedure from "../../../procedures/authedProcedure";
+import { router } from "../../../trpc";
 
 /* ----------------------------------------------------------------- */
 /*  PUBLIC directory router (no auth)                                 */
