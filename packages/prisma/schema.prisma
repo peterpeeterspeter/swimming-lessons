@@ -3093,9 +3093,9 @@ model CalendarCacheEvent {
 
 /// Swim school directory listing (public, no auth required to view)
 model DirectoryListing {
-  id        String @id @default(uuid())
-  team      Team   @relation(fields: [teamId], references: [id], onDelete: Cascade)
-  teamId    Int    @unique
+  id     String @id @default(uuid())
+  team   Team?  @relation(fields: [teamId], references: [id], onDelete: Cascade)
+  teamId Int?   @unique
 
   slug        String @unique
   name        String
@@ -3108,13 +3108,19 @@ model DirectoryListing {
   phone       String?
   email       String?
   website     String?
-  logoUrl     String?
+  logoUrl       String?
   coverPhotoUrl String?
 
   galleryUrls    Json?
   levelsOffered  Json?
   facilities     Json?
   trialLessonUrl String?
+
+  rating       Decimal? @db.Decimal(2, 1)
+  reviewCount  Int?
+  latitude     Decimal? @db.Decimal(10, 7)
+  longitude    Decimal? @db.Decimal(10, 7)
+  googlePlaceId String?
 
   isPublished Boolean @default(false)
   isFeatured  Boolean @default(false)
@@ -3126,6 +3132,7 @@ model DirectoryListing {
 
   @@index([city])
   @@index([isPublished])
+  @@index([state])
 }
 
 /// Parent inquiry from the directory (lead gen)

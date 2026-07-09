@@ -61,23 +61,28 @@ export default async function SchoolDetailPage({
 
   if (!listing) notFound();
 
-  // Find trial lesson event types for this team
-  const trialEvents = await prisma.eventType.findMany({
-    where: {
-      teamId: listing.teamId,
-      OR: [
-        { slug: { contains: "trial", mode: "insensitive" } },
-        { title: { contains: "trial", mode: "insensitive" } },
-      ],
-    },
-    select: { id: true, title: true, slug: true, length: true },
-    take: 3,
-  });
+  // Find trial lesson event types for this team (only if teamId exists)
+  let trialEvents: { id: number; title: string; slug: string | null; length: number | null }[] = [];
+  let team: { slug: string | null } | null = null;
 
-  const team = await prisma.team.findUnique({
-    where: { id: listing.teamId },
-    select: { slug: true },
-  });
+  if (listing.teamId) {
+    trialEvents = await prisma.eventType.findMany({
+      where: {
+        teamId: listing.teamId,
+        OR: [
+          { slug: { contains: "trial", mode: "insensitive" } },
+          { title: { contains: "trial", mode: "insensitive" } },
+        ],
+      },
+      select: { id: true, title: true, slug: true, length: true },
+      take: 3,
+    });
+
+    team = await prisma.team.findUnique({
+      where: { id: listing.teamId },
+      select: { slug: true },
+    });
+  }
 
   // Build JSON-LD SportsActivityLocation structured data
   const structuredData: Record<string, unknown> = {
@@ -106,6 +111,22 @@ export default async function SchoolDetailPage({
   if (listing.phone) structuredData.telephone = listing.phone;
   if (listing.email) structuredData.email = listing.email;
   if (listing.website) structuredData.sameAs = [listing.website];
+
+  if (listing.rating) {
+    structuredData.aggregateRating = {
+      "@type": "AggregateRating",
+      ratingValue: Number(listing.rating).toFixed(1),
+      ...(listing.reviewCount && { reviewCount: listing.reviewCount }),
+    };
+  }
+
+  if (listing.latitude && listing.longitude) {
+    structuredData.geo = {
+      "@type": "GeoCoordinates",
+      latitude: Number(listing.latitude),
+      longitude: Number(listing.longitude),
+    };
+  }
 
   if (listing.levelsOffered && Array.isArray(listing.levelsOffered)) {
     structuredData.offers = (listing.levelsOffered as string[]).map((level) => ({
@@ -166,6 +187,32 @@ export default async function SchoolDetailPage({
                 {listing.tagline && (
                   <p className="text-sm text-slate-500 dark:text-slate-400">{listing.tagline}</p>
                 )}
+                {/* Rating + location badge */}
+                <div className="mt-2 flex flex-wrap items-center gap-3">
+                  {listing.rating && (
+                    <span className="flex items-center gap-1 text-sm">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden>
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                      </svg>
+                      <span className="font-semibold text-slate-900 dark:text-white">
+                        {Number(listing.rating).toFixed(1)}
+                      </span>
+                      {listing.reviewCount && (
+                        <span className="text-slate-400">({listing.reviewCount} reviews)</span>
+                      )}
+                    </span>
+                  )}
+                  {listing.city && (
+                    <span className="flex items-center gap-1 text-sm text-slate-400">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden>
+                        <path d="M12 21s-7-6.5-7-12a7 7 0 1114 0c0 5.5-7 12-7 12z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        <circle cx="12" cy="9" r="2.5" stroke="currentColor" strokeWidth="2" />
+                      </svg>
+                      {listing.city}
+                      {listing.state ? `, ${listing.state}` : ""}
+                    </span>
+                  )}
+                </div>
               </div>
             </div>
             <div className="flex flex-wrap gap-2">
