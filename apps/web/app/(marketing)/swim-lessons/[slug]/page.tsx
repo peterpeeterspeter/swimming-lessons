@@ -6,16 +6,45 @@ import prisma from "@calcom/prisma";
 
 import { LeadForm } from "../LeadForm";
 
+const SITE_URL = process.env.NEXT_PUBLIC_WEBAPP_URL || "https://swim-lessons.vercel.app";
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const listing = await prisma.directoryListing.findUnique({
     where: { slug, isPublished: true },
-    select: { name: true, tagline: true, city: true },
+    select: {
+      name: true,
+      tagline: true,
+      city: true,
+      state: true,
+      description: true,
+      coverPhotoUrl: true,
+      slug: true,
+    },
   });
   if (!listing) return { title: "Swim school not found" };
+
+  const title = `${listing.name} — Swim School${listing.city ? ` in ${listing.city}` : ""}`;
+  const description = listing.tagline || listing.description?.slice(0, 160) || `Learn more about ${listing.name} and book a trial lesson.`;
+  const url = `${SITE_URL}/swim-lessons/${listing.slug}`;
+
   return {
-    title: `${listing.name} — Swim School${listing.city ? ` in ${listing.city}` : ""}`,
-    description: listing.tagline || `Learn more about ${listing.name} and book a trial lesson.`,
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      title,
+      description,
+      url,
+      type: "website",
+      ...(listing.coverPhotoUrl && { images: [{ url: listing.coverPhotoUrl, width: 1200, height: 630, alt: listing.name }] }),
+    },
+    twitter: {
+      card: listing.coverPhotoUrl ? "summary_large_image" : "summary",
+      title,
+      description,
+      ...(listing.coverPhotoUrl && { images: [listing.coverPhotoUrl] }),
+    },
   };
 }
 
@@ -50,8 +79,49 @@ export default async function SchoolDetailPage({
     select: { slug: true },
   });
 
+  // Build JSON-LD SportsActivityLocation structured data
+  const structuredData: Record<string, unknown> = {
+    "@context": "https://schema.org",
+    "@type": "SportsActivityLocation",
+    name: listing.name,
+    url: `${SITE_URL}/swim-lessons/${listing.slug}`,
+    description: listing.tagline || listing.description?.slice(0, 300) || undefined,
+  };
+
+  if (listing.coverPhotoUrl || listing.logoUrl) {
+    structuredData.image = [listing.coverPhotoUrl, listing.logoUrl].filter(Boolean);
+  }
+
+  if (listing.address || listing.city || listing.state || listing.postalCode) {
+    structuredData.address = {
+      "@type": "PostalAddress",
+      ...(listing.address && { streetAddress: listing.address }),
+      ...(listing.city && { addressLocality: listing.city }),
+      ...(listing.state && { addressRegion: listing.state }),
+      ...(listing.postalCode && { postalCode: listing.postalCode }),
+      addressCountry: "US",
+    };
+  }
+
+  if (listing.phone) structuredData.telephone = listing.phone;
+  if (listing.email) structuredData.email = listing.email;
+  if (listing.website) structuredData.sameAs = [listing.website];
+
+  if (listing.levelsOffered && Array.isArray(listing.levelsOffered)) {
+    structuredData.offers = (listing.levelsOffered as string[]).map((level) => ({
+      "@type": "Offer",
+      name: level,
+      description: `${level} swimming lessons at ${listing.name}`,
+      url: `${SITE_URL}/swim-lessons/${listing.slug}#inquire`,
+    }));
+  }
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       {/* Cover photo */}
       <div className="relative h-64 overflow-hidden sm:h-80">
         {listing.coverPhotoUrl ? (

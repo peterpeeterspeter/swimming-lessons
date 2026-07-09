@@ -4,10 +4,26 @@ import prisma from "@calcom/prisma";
 import { Reveal } from "../components-client";
 import { SectionHeading, SectionLead } from "../components-server";
 
+const SITE_URL = process.env.NEXT_PUBLIC_WEBAPP_URL || "https://swim-lessons.vercel.app";
+
 export const metadata = {
   title: "Find Swim Schools — Swimming-Lessons.com Directory",
   description:
     "Browse swim schools near you. Compare programs, read about their approach, and send an inquiry or book a trial lesson directly.",
+  alternates: { canonical: `${SITE_URL}/swim-lessons` },
+  openGraph: {
+    title: "Find Swim Schools — Swimming-Lessons.com Directory",
+    description:
+      "Browse swim schools near you. Compare programs, read about their approach, and send an inquiry or book a trial lesson directly.",
+    url: `${SITE_URL}/swim-lessons`,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Find Swim Schools — Swimming-Lessons.com Directory",
+    description:
+      "Browse swim schools near you. Compare programs, read about their approach, and send an inquiry or book a trial lesson directly.",
+  },
 };
 
 export default async function DirectoryPage() {
@@ -28,8 +44,26 @@ export default async function DirectoryPage() {
     },
   });
 
+  // Build JSON-LD ItemList for SEO
+  const itemListJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Swim Schools Directory",
+    itemListElement: listings.map((listing, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: listing.name,
+      url: `${SITE_URL}/swim-lessons/${listing.slug}`,
+      ...(listing.city && { description: `${listing.tagline || listing.name}${listing.state ? `, ${listing.state}` : ""}` }),
+    })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
+      />
       {/* Header */}
       <section className="border-b border-slate-200 dark:border-slate-800">
         <div className="mx-auto max-w-7xl px-4 pb-12 pt-32 sm:px-6 lg:pb-16 lg:pt-40">
